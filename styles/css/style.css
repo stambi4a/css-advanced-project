@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+html {
+  color: #010119; }
+
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style-type: none; }
+
+i.fas {
+  font-size: 1.4rem;
+  color: #01c8fe; }
+
+header {
+  padding-top: 0.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 40% 30% 30%;
+  grid-template-areas: "logo offers offers offers auth" "info-message info-message info-message info-message close-info-message"  "main-menu main-menu main-menu main-menu main-menu"; }
+
+header * {
+  text-align: center; }
+
+header .logo {
+  grid-area: logo; }
+
+header .logo a {
+  display: block; }
+
+header .logo a img {
+  display: block;
+  width: auto; }
+
+header .info-message {
+  margin-top: 1rem;
+  grid-area: info-message;
+  background-color: #46c9ff;
+  color: #1b057f; }
+
+header .info-message h2 {
+  padding-left: 20%;
+  text-transform: uppercase;
+  letter-spacing: 1.4rem; }
+
+header .close-info-message {
+  margin-top: 1rem;
+  grid-area: close-info-message;
+  background-color: #46c9ff;
+  color: #1b057f;
+  text-align: right; }
+
+header .close-info-message a {
+  padding: 0.4rem; }
+
+header .close-info-message a i {
+  font-size: 2.2rem;
+  color: white; }
+
+header .auth {
+  grid-area: auth; }
+
+header ul.auth li {
+  display: inline-block; }
+
+header ul.offers {
+  grid-area: offers; }
+
+header ul.offers li {
+  display: inline-block;
+  width: 30%;
+  text-align: center; }
+
+header .main-menu {
+  grid-area: main-menu; }
+
+header .main-menu li {
+  width: 15%; }
+
+header nav ul li {
+  display: inline-block; }
