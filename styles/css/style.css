@@ -1,69 +1,179 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
-html {
-  color: #010119; }
-
 a {
   text-decoration: none; }
 
 ul li {
   list-style-type: none; }
 
-i.fas {
+i.fa {
   font-size: 1.4rem;
-  color: #01c8fe; }
+  color: #1b057f; }
+
+input, select, option {
+  border-radius: 0.2rem;
+  border: 1px solid #1b057f;
+  outline: none;
+  color: #1b057f; }
 
 header {
-  padding-top: 0.5rem;
   display: grid;
   align-items: center;
+  grid-row-gap: 1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 40% 30% 30%;
-  grid-template-areas: "logo offers offers offers auth" "info-message info-message info-message info-message close-info-message"  "main-menu main-menu main-menu main-menu main-menu"; }
+  grid-template-rows: 50px 20px 5px 50px;
+  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "hr hr hr hr hr" "main-menu main-menu main-menu main-menu main-menu"; }
 
 header * {
   text-align: center; }
 
+header ul li a {
+  font-size: 1rem;
+  font-weight: 550; }
+
+header hr {
+  grid-area: hr; }
+
 header .logo {
-  grid-area: logo; }
+  padding-top: 0.5rem;
+  grid-area: logo;
+  margin-left: 4rem; }
 
 header .logo a {
   display: block; }
 
 header .logo a img {
   display: block;
-  width: auto; }
+  width: auto;
+  width: 100px; }
 
 header .info-message {
-  margin-top: 1rem;
+  height: 50px;
   grid-area: info-message;
-  background-color: #46c9ff;
-  color: #1b057f; }
+  border-radius: 0.6rem;
+  background: linear-gradient(to bottom, rgba(50, 129, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  border-bottom: 1px solid #e1f0ff;
+  border-left: 1px solid #e1f0ff;
+  border-right: 1px solid #e1f0ff; }
 
-header .info-message h2 {
-  padding-left: 20%;
-  text-transform: uppercase;
-  letter-spacing: 1.4rem; }
-
-header .close-info-message {
-  margin-top: 1rem;
-  grid-area: close-info-message;
-  background-color: #46c9ff;
+header .info-message a {
+  display: inline-block;
+  line-height: 50px;
+  vertical-align: middle;
+  font-family: "Oleo Script", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
   color: #1b057f;
-  text-align: right; }
+  text-shadow: 0 0.05rem 0.1rem #0d026c;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  width: 95%; }
 
-header .close-info-message a {
-  padding: 0.4rem; }
+header .info-message button {
+  background: none;
+  border: none;
+  outline: none; }
 
-header .close-info-message a i {
-  font-size: 2.2rem;
+header .info-message button i {
+  font-size: 1.4rem;
   color: white; }
 
 header .auth {
   grid-area: auth; }
 
-header ul.auth li {
+header .auth a {
+  color: #1b057f; }
+
+header .auth i, header .auth select {
+  margin: 0 0.3rem; }
+
+header .user select, header .user select option {
+  font-weight: bold;
+  color: #1b057f; }
+
+header ul.auth li, header ul.user li {
   display: inline-block; }
+
+header ul.user {
+  grid-area: user; }
+
+header ul.user > li:nth-child(3) {
+  position: relative;
+  border: 1px solid #1b057f;
+  border-radius: 3px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 60px;
+  height: 22px; }
+
+header ul.user > li:nth-child(3) span {
+  font-weight: 600;
+  color: #1b057f;
+  text-align: left;
+  font-size: 1rem; }
+
+header ul.user > li:nth-child(3) img {
+  display: block;
+  position: relative;
+  top: 3px;
+  width: 20px; }
+
+header ul.user > li:nth-child(3) i:nth-of-type(2) {
+  display: none; }
+
+header ul.user > li:nth-child(3) > img {
+  display: inline-block;
+  padding: 0 0px; }
+
+header ul.user > li:nth-child(3) > i.fa {
+  font-size: 1rem;
+  margin-left: 0.1rem; }
+
+header ul.user > li:nth-child(3) ul {
+  display: none;
+  position: absolute;
+  top: 21px;
+  left: -1px;
+  border: 1px solid #1b057f;
+  background: white;
+  width: 100%; }
+
+header ul.user li:nth-child(3):hover ul {
+  display: block; }
+
+header ul.user ul.country li {
+  display: block;
+  width: auto;
+  height: 22px; }
+
+header ul.user ul.country li:hover {
+  cursor: pointer;
+  background-color: #4b8ffc; }
+
+header ul.user ul.country li:hover span {
+  color: white; }
+
+header ul.user ul.country li img {
+  display: inline-block;
+  width: 22px;
+  padding: 0 1px; }
+
+header div.search {
+  grid-area: search; }
+
+header div.search input[type="text"] {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0.1rem 0.2rem;
+  font-family: FontAwesome; }
+
+header div.search input[type="text"]::placeholder {
+  text-align: right;
+  color: #1b057f;
+  padding: 0 0.5rem 0 0; }
 
 header ul.offers {
   grid-area: offers; }
@@ -73,6 +183,19 @@ header ul.offers li {
   width: 30%;
   text-align: center; }
 
+header ul.offers li a {
+  padding: 0.1rem 0.3rem;
+  font-family: "Oleo Script", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: #1b057f;
+  border-bottom: 1px solid #e1f0ff;
+  border-left: 1px solid #e1f0ff;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.1rem 0.1rem rgba(13, 2, 58, 0.3); }
+
 header .main-menu {
   grid-area: main-menu; }
 
@@ -81,3 +204,7 @@ header .main-menu li {
 
 header nav ul li {
   display: inline-block; }
+
+header .main-menu li a {
+  text-transform: uppercase;
+  font-weight: 600; }

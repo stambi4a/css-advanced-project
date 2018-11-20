@@ -8,40 +8,86 @@
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/typography.css">
   <link rel="stylesheet" href="styles/css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/scripts/user-interface.js"></script>
   <title>King of Diamonds</title>
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.jpg" alt="King of Diamonds"></a>
+    <div class="info-message" id="info-message">
+      <a href="deal-of-the-month.html">blue deal of the month</a>
+      <!-- <button onclick="document.getElementById('info-message').style.display='none'"><i class="fas fa-times-circle"></i></button> -->
     </div>
-    <ul class="offers">
-      <li><a href="delivery.html">Free Delivery</a></li>
-      <li><a href=".html">Loyalty Gifts</a></li>
-      <li><a href="register.html">Huge Discounts</a></li>
-    </ul>
+    <div class="logo">
+      <a href="index.html"><img src="images/logos/kd3.png" alt="King of Diamonds"></a>
+    </div>
     <ul class="auth">
-      <li><a href="login.html"></a><i class="fas fa-sign-in"></i>Log In</li>
-      <li><a href="register.html"></a><i class="fas fa-user-plus"></i>Register</li>
+      <li><a href="login.html">Sign In</a><i class="fa fa-sign-in" aria-hidden="true"></i></li>
+      <li><span>/</span></li>
+      <li><a href="register.html">Sign Up</a><i class="fa fa-user-plus" aria-hidden="true"></i></li>
+    </ul>
+    <ul class="user">
       <li>
         <select class="language">
           <option value="EN">EN</option>
           <option value="DE">DE</option>
           <option value="FR">FR</option>
           <option value="SP">SP</option>
+          <option value="IT">IT</option>
+          <option value="RU">RU</option>
         </select>
       </li>
+      <li>
+        <select class="currency">
+          <option value="&#36;">USD(&#36;)</option>
+          <option value="&#163;">GBP(&#163;)</option>
+          <option value="&#8364;">EUR(&#8364;)</option>
+          <option value="&#165;">CHN(&#165;)</option>
+        </select>
+      </li>
+      <li>
+          <span>US </span><img src="/images/flags/USA.png" alt=""/><i class="fa fa-caret-down" aria-hidden="true"></i>
+          <ul class="country">
+           <li><span>US </span><img src="/images/flags/USA.png" alt=""/></li>
+           <li><span>UK </span><img src="/images/flags/UK.png" alt=""/></li>
+           <li><span>FR </span><img src="/images/flags/FR.png" alt=""/></li>
+           <li><span>DE </span><img src="/images/flags/DE.png" alt=""/></li>
+           <li><span>ES </span><img src="/images/flags/SP.png" alt=""/></li>
+           <li><span>IT </span><img src="/images/flags/IT.png" alt=""/></li>
+           <li><span>RU </span><img src="/images/flags/RU.png" alt=""/></li>
+           <li><span>CH </span><img src="/images/flags/CH.png" alt=""/></li>
+          </ul>
+        </li>
     </ul>
-    <div class="info-message">
-      <h2>Deal of the Month</h2>
+    <div class="search">
+        <input type="text" placeholder="&#xf002;" aria-hidden="true">
     </div>
-    <div class="close-info-message">
-      <a><i class="fas fa-times-circle"></i></a>
-    </div>
+    <ul class="offers">
+      <li><a href="delivery.html">Free Delivery</a></li>
+      <li><a href=".html">Loyalty Gifts</a></li>
+      <li><a href="register.html">Huge Discounts</a></li>
+    </ul>
+    <hr>
     <nav class="main-menu">
       <ul>
-        <li><a href="html/diamonds.html">Diamonds</a></li>
+        <li><a>Diamonds</a>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
         <li><a href="html/jewelry.html">Jewelry</a></li>
         <li><a href="html/occassions.html">Occassions</a></li>
         <li><a href="html/events.html">Events</a></li>
