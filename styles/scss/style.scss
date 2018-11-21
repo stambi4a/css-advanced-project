@@ -1,17 +1,31 @@
-$headCol:rgb(27, 5, 127);
-$linkCol:rgb(68, 1, 39);
+$headCol:rgb(61, 0, 112);
+$bigCol:rgb(40, 40, 164);
+$linkCol:rgb(48, 1, 29);
 $liBgCol:rgb(75, 143, 252);
-$headBorCol:rgb(225, 240, 255);
-$linkBorCol:rgb(255, 225, 240);
+$offersBgCol:rgb(250, 253, 255);
+$bigBorCol:rgb(226, 236, 255);
+$headBorCol:rgb(237, 219, 255);
+$linkBorCol:rgb(237, 219, 255);
+$menuBorCol:rgb(221, 197, 210);
+$white:rgb(255,255,255);
 $borLink:1px solid $linkBorCol;
-$borLight:1px solid $headBorCol;
+$borLight:1px solid $bigBorCol;
 $borDark:1px solid $headCol;
+$menuBor:1px outset $menuBorCol;
 $headFont:"Oleo Script";
+$fontAll:0.9rem;
+$fontLinks:1rem;
+$fontBig:1.6rem;
+$fontHead:1.2rem;
 @mixin formField() {
   border-radius:0.2rem;
   border:$borDark;
   outline:none;
   color:$headCol;
+}
+@mixin linkHover() {
+  border-radius:0.2rem;
+  box-shadow:0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
 }
 html {
 
@@ -23,7 +37,7 @@ ul li{
   list-style-type: none;
 }
 i.fa {
-  font-size:1.4rem;
+  font-size:$fontLinks;
   color:$headCol;
 }
 input, select, option {
@@ -35,22 +49,21 @@ header {
   align-items: center;
   grid-row-gap:1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows:50px 20px 5px 50px;
+  grid-template-rows:50px 20px 5px 200px;
   grid-template-areas: 
     "logo info-message info-message info-message auth" 
     "search offers offers offers user"
     "hr hr hr hr hr"
-    "main-menu main-menu main-menu main-menu main-menu";
+    "main-nav main-nav main-nav main-nav main-nav";
 }
 header * {
   text-align:center;
 }
-header ul li a {
-  font-size:1rem;
-  font-weight:550;
-}
 header hr {
   grid-area: hr;
+  height:1px;
+  border:none;
+  background-color:$headCol;
 }
 header .logo {
   padding-top:0.5rem;
@@ -70,7 +83,7 @@ header .info-message {
   height:50px;
   grid-area: info-message;
   border-radius:0.6rem;
-  background:linear-gradient(to bottom, rgba(50,129,255,0.1) 0%,rgba(136,252,252,0.0) 100%), url('/images/banners/blue-deal-of-the-month.png');
+  background:linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%,rgba(136,252,252,0.0) 100%), url('/images/banners/blue-deal-of-the-month.png');
   background-repeat:no-repeat;
   background-position: center bottom;
   background-size:100%;
@@ -84,9 +97,9 @@ header .info-message a {
   line-height:50px;
   vertical-align:middle;
   font-family:$headFont, sans-serif;
-  font-size:25px;
-  font-weight:500;
-  color:rgb(27, 5, 127);
+  font-size:$fontBig;
+  font-weight:300;
+  color:$bigCol;
   text-shadow:0 0.05rem 0.1rem rgb(13, 2, 108);
   text-transform:uppercase;
   letter-spacing:0.3rem;
@@ -97,15 +110,12 @@ header .info-message button {
   border:none;
   outline:none;
 }
-header .info-message button i {
-  font-size:1.4rem;
-  color:white;
-}
 header .auth {
   grid-area: auth;
 }
-header .auth a {
+header .auth a, header .auth span {
   color:$headCol;
+  font-size:$fontLinks;
 }
 header .auth i, header .auth select{
   margin:0 0.3rem;
@@ -135,7 +145,7 @@ header ul.user > li:nth-child(3) span{
   font-weight:600;
   color:$headCol;
   text-align:left;
-  font-size:1rem;
+  font-size:$fontLinks;
 }
 header ul.user > li:nth-child(3) img{
   display:block;
@@ -151,7 +161,7 @@ header ul.user > li:nth-child(3)  > img {
   padding:0 0px;
 }
 header ul.user > li:nth-child(3)  > i.fa {
-  font-size:1rem;
+  font-size:$fontLinks;
   margin-left:0.1rem;
 }
 header ul.user > li:nth-child(3) ul {
@@ -160,14 +170,17 @@ header ul.user > li:nth-child(3) ul {
   top:21px;
   left:-1px;
   border:$borDark;
-  background:rgb(255,255,255);
+  background:$white;
   width:100%;
   // box-sizing:border-box;
 }
-
 header ul.user li:nth-child(3):hover ul{
   display:block;
   // border:1px solid $headCol;
+}
+header ul.user ul.country{
+  background-color:$white;
+  z-index:9999;
 }
 header ul.user ul.country li {
   display:block;
@@ -179,7 +192,7 @@ header ul.user ul.country li:hover {
   background-color:$liBgCol;
 }
 header ul.user ul.country li:hover span {
-  color:rgb(255,255,255);
+  color:$white;
 }
 header ul.user ul.country li img {
   display:inline-block;
@@ -213,8 +226,8 @@ header ul.offers li{
 header ul.offers li a{
   padding:0.1rem 0.3rem;
   font-family:$headFont, sans-serif;
-  font-size:1.4rem;
-  font-weight:550;
+  font-size:$fontHead;
+  font-weight:lighter;
   letter-spacing:0.1rem;
   color:$headCol;
   border-bottom:$borLight;
@@ -223,16 +236,104 @@ header ul.offers li a{
   text-transform: uppercase;
   text-shadow:0 0.1rem 0.1rem rgba(13, 2, 58, 0.3);
 }
-header .main-menu {
-  grid-area: main-menu;
+header ul.offers li a:hover{
+  background-color:$offersBgCol;
+  box-shadow:0.1rem 0.1rem 0.1rem rgba(2, 46, 56, 0.3);
 }
-header .main-menu li{
+header .main-nav {
+  grid-area: main-nav;
+  align-self:start;
+}
+header .main-nav  a {
+  font-size:$fontAll;
+}
+header nav.main-nav >ul > li{
   width:15%;
 }
 header nav ul li {
   display:inline-block;
 }
-header .main-menu li a {
+header nav.main-nav li a {
   text-transform:uppercase;
+  font-weight:400;
+}
+
+header nav.main-nav > ul.main-menu{
+  position:relative;
+  top:0;
+  left:1.5rem;
+}
+header nav.main-nav > ul.main-menu > li {
+  vertical-align:top;
+  text-align:left;
+}
+header nav.main-nav > ul.main-menu > li *{
+  text-align:left;
+}
+header nav.main-nav > ul.main-menu > li > a {
+  padding:0.1rem 0.3rem;
+  display:block;
+  width:90%;
+}
+header nav.main-nav > ul.main-menu > li:hover >   a{
+  @include linkHover;
+}
+header nav.main-nav > ul.main-menu > li > a,header nav.main-nav > ul.main-menu > li > ul > li > a {
   font-weight:600;
+}
+header nav.main-nav > ul.main-menu > li > ul {
+  // display:none;
+  position:absolute;
+  top:1.4rem;
+  border:$menuBor;
+  padding:0.9rem;
+  display:none;
+  align-items: flex-start;
+  border-radius:4px;
+}
+header nav.main-nav > ul.main-menu > li:last-of-type > ul {
+  right:0;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > a {
+  padding:0.1rem 0.3rem 0.1rem 0.3rem;
+  display:block;
+  text-align:justify;
+  width:100%;
+  text-align:left;
+}
+header nav.main-nav > ul.main-menu > li > ul > li {
+  margin:0 1rem;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > a:hover{
+  // text-decoration: underline;
+  // background:$linkCol;
+  // color:$white;
+  @include linkHover;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul{
+  margin-top:0.3rem;
+  margin-left:0.2rem;
+}
+header nav.main-nav > ul.main-menu > li:hover > ul {
+  display:flex;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul > li {
+  display:block;
+  padding:0rem 0.2rem;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover {
+  border-radius:0.2rem;
+  box-shadow:0 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover > a {
+  // @include linkHover;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul.diamonds-submenu-first, 
+header nav.main-nav > ul.main-menu > li > ul > li > ul.jewelry-submenu-first,
+header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first 
+{
+  columns: 2;
+}
+header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first > li > a {
+  text-align:center;
 }

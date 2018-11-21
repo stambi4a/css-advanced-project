@@ -5,32 +5,31 @@ ul li {
   list-style-type: none; }
 
 i.fa {
-  font-size: 1.4rem;
-  color: #1b057f; }
+  font-size: 1rem;
+  color: #3d0070; }
 
 input, select, option {
   border-radius: 0.2rem;
-  border: 1px solid #1b057f;
+  border: 1px solid #3d0070;
   outline: none;
-  color: #1b057f; }
+  color: #3d0070; }
 
 header {
   display: grid;
   align-items: center;
   grid-row-gap: 1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 50px 20px 5px 50px;
-  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "hr hr hr hr hr" "main-menu main-menu main-menu main-menu main-menu"; }
+  grid-template-rows: 50px 20px 5px 200px;
+  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "hr hr hr hr hr" "main-nav main-nav main-nav main-nav main-nav"; }
 
 header * {
   text-align: center; }
 
-header ul li a {
-  font-size: 1rem;
-  font-weight: 550; }
-
 header hr {
-  grid-area: hr; }
+  grid-area: hr;
+  height: 1px;
+  border: none;
+  background-color: #3d0070; }
 
 header .logo {
   padding-top: 0.5rem;
@@ -49,22 +48,22 @@ header .info-message {
   height: 50px;
   grid-area: info-message;
   border-radius: 0.6rem;
-  background: linear-gradient(to bottom, rgba(50, 129, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
+  background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
-  border-bottom: 1px solid #e1f0ff;
-  border-left: 1px solid #e1f0ff;
-  border-right: 1px solid #e1f0ff; }
+  border-bottom: 1px solid #e2ecff;
+  border-left: 1px solid #e2ecff;
+  border-right: 1px solid #e2ecff; }
 
 header .info-message a {
   display: inline-block;
   line-height: 50px;
   vertical-align: middle;
   font-family: "Oleo Script", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  color: #1b057f;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #2828a4;
   text-shadow: 0 0.05rem 0.1rem #0d026c;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -75,22 +74,19 @@ header .info-message button {
   border: none;
   outline: none; }
 
-header .info-message button i {
-  font-size: 1.4rem;
-  color: white; }
-
 header .auth {
   grid-area: auth; }
 
-header .auth a {
-  color: #1b057f; }
+header .auth a, header .auth span {
+  color: #3d0070;
+  font-size: 1rem; }
 
 header .auth i, header .auth select {
   margin: 0 0.3rem; }
 
 header .user select, header .user select option {
   font-weight: bold;
-  color: #1b057f; }
+  color: #3d0070; }
 
 header ul.auth li, header ul.user li {
   display: inline-block; }
@@ -100,7 +96,7 @@ header ul.user {
 
 header ul.user > li:nth-child(3) {
   position: relative;
-  border: 1px solid #1b057f;
+  border: 1px solid #3d0070;
   border-radius: 3px;
   padding: 0;
   box-sizing: border-box;
@@ -109,7 +105,7 @@ header ul.user > li:nth-child(3) {
 
 header ul.user > li:nth-child(3) span {
   font-weight: 600;
-  color: #1b057f;
+  color: #3d0070;
   text-align: left;
   font-size: 1rem; }
 
@@ -135,12 +131,16 @@ header ul.user > li:nth-child(3) ul {
   position: absolute;
   top: 21px;
   left: -1px;
-  border: 1px solid #1b057f;
+  border: 1px solid #3d0070;
   background: white;
   width: 100%; }
 
 header ul.user li:nth-child(3):hover ul {
   display: block; }
+
+header ul.user ul.country {
+  background-color: white;
+  z-index: 9999; }
 
 header ul.user ul.country li {
   display: block;
@@ -172,7 +172,7 @@ header div.search input[type="text"] {
 
 header div.search input[type="text"]::placeholder {
   text-align: right;
-  color: #1b057f;
+  color: #3d0070;
   padding: 0 0.5rem 0 0; }
 
 header ul.offers {
@@ -186,25 +186,106 @@ header ul.offers li {
 header ul.offers li a {
   padding: 0.1rem 0.3rem;
   font-family: "Oleo Script", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 550;
+  font-size: 1.2rem;
+  font-weight: lighter;
   letter-spacing: 0.1rem;
-  color: #1b057f;
-  border-bottom: 1px solid #e1f0ff;
-  border-left: 1px solid #e1f0ff;
+  color: #3d0070;
+  border-bottom: 1px solid #e2ecff;
+  border-left: 1px solid #e2ecff;
   border-radius: 0.3rem;
   text-transform: uppercase;
   text-shadow: 0 0.1rem 0.1rem rgba(13, 2, 58, 0.3); }
 
-header .main-menu {
-  grid-area: main-menu; }
+header ul.offers li a:hover {
+  background-color: #fafdff;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(2, 46, 56, 0.3); }
 
-header .main-menu li {
+header .main-nav {
+  grid-area: main-nav;
+  align-self: start; }
+
+header .main-nav a {
+  font-size: 0.9rem; }
+
+header nav.main-nav > ul > li {
   width: 15%; }
 
 header nav ul li {
   display: inline-block; }
 
-header .main-menu li a {
+header nav.main-nav li a {
   text-transform: uppercase;
+  font-weight: 400; }
+
+header nav.main-nav > ul.main-menu {
+  position: relative;
+  top: 0;
+  left: 1.5rem; }
+
+header nav.main-nav > ul.main-menu > li {
+  vertical-align: top;
+  text-align: left; }
+
+header nav.main-nav > ul.main-menu > li * {
+  text-align: left; }
+
+header nav.main-nav > ul.main-menu > li > a {
+  padding: 0.1rem 0.3rem;
+  display: block;
+  width: 90%; }
+
+header nav.main-nav > ul.main-menu > li:hover > a {
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
+
+header nav.main-nav > ul.main-menu > li > a, header nav.main-nav > ul.main-menu > li > ul > li > a {
   font-weight: 600; }
+
+header nav.main-nav > ul.main-menu > li > ul {
+  position: absolute;
+  top: 1.4rem;
+  border: 1px outset #ddc5d2;
+  padding: 0.9rem;
+  display: none;
+  align-items: flex-start;
+  border-radius: 4px; }
+
+header nav.main-nav > ul.main-menu > li:last-of-type > ul {
+  right: 0; }
+
+header nav.main-nav > ul.main-menu > li > ul > li > a {
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  display: block;
+  text-align: justify;
+  width: 100%;
+  text-align: left; }
+
+header nav.main-nav > ul.main-menu > li > ul > li {
+  margin: 0 1rem; }
+
+header nav.main-nav > ul.main-menu > li > ul > li > a:hover {
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
+
+header nav.main-nav > ul.main-menu > li > ul > li > ul {
+  margin-top: 0.3rem;
+  margin-left: 0.2rem; }
+
+header nav.main-nav > ul.main-menu > li:hover > ul {
+  display: flex; }
+
+header nav.main-nav > ul.main-menu > li > ul > li > ul > li {
+  display: block;
+  padding: 0rem 0.2rem; }
+
+header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover {
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
+
+header nav.main-nav > ul.main-menu > li > ul > li > ul.diamonds-submenu-first,
+header nav.main-nav > ul.main-menu > li > ul > li > ul.jewelry-submenu-first,
+header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first {
+  columns: 2; }
+
+header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first > li > a {
+  text-align: center; }
