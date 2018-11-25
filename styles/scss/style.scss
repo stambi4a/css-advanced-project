@@ -7,8 +7,10 @@ $bigBorCol:rgb(226, 236, 255);
 $headBorCol:rgb(237, 219, 255);
 $linkBorCol:rgb(237, 219, 255);
 $menuBorCol:rgb(221, 197, 210);
+$boxCol:rgba(99, 1, 60,0.1);
 $white:rgb(255,255,255);
-$weekCol:rgb(99, 1, 60);
+$weekCol:rgb(30, 1, 20);
+$quotCol:rgb(121, 0, 255);
 $borLink:1px solid $linkBorCol;
 $borLight:1px solid $bigBorCol;
 $borDark:1px solid $headCol;
@@ -18,6 +20,7 @@ $fontAll:0.9rem;
 $fontLinks:1rem;
 $fontBig:1.6rem;
 $fontHead:1.2rem;
+$boxShadow:0.1rem 0.1rem 0.2rem 0.2rem $boxCol;
 %formField {
   border-radius:0.2rem;
   border:$borDark;
@@ -389,5 +392,122 @@ main section.week-offers a {
   text-transform: uppercase;
 }
 main section.main-categories {
-  position:relative;
+  // position:relative;
+}
+main section.jewelry-gifts {
+  background:url("/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+  background-size:cover;
+  height:26rem;
+}
+main section.jewelry-gifts .text-right {
+  position:absolute;
+  right:5rem;
+  text-align:right;
+}
+main section.jewelry-gifts h1 {
+  padding:1.5rem 0 0 5rem;
+  font-weight:lighter;
+  font-size:3rem;
+}
+main section.jewelry-gifts h1.week-offer-rabat {
+  padding-top:0;
+}
+main section.jewelry-gifts a {
+  display:block;
+  padding:1.2rem 0 0 5rem;
+  font-size:1.3rem;
+  font-weight:600;
+  // font-family:$headFont;
+  color:$headCol;
+  text-transform: uppercase;
+}
+main section.special-collection {
+  margin-top:2rem;
+}
+main section.special-collection > h2,main section.special-collection > h3{
+  text-align:center;
+  font-weight:400;
+  text-transform: capitalize;
+}
+main section.special-collection > h2 {
+  font-size:2.4rem;
+}
+main section.special-collection > h3{
+  font-size:2rem;
+}
+main section.clients > h2, main section.clients > h3 {
+  text-align:center;
+  font-weight:400;
+  text-transform: capitalize;
+}
+main section.clients > h2 {
+  font-size:2.4rem;
+}
+main section.clients > h3{
+  font-size:2rem;
+}
+main section.clients article {
+  display:flex;
+  margin:1rem;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items:center;
+  border-radius:0.5rem;
+  box-shadow: $boxShadow;
+}
+main section.clients article figure{
+  width:35%;
+}
+main section.clients article figure img{
+  border-radius:0.3rem;
+  width:80%;
+  min-width:300px;
+  margin: 2rem 0;
+  display:block;
+  margin:2rem auto;
+}
+main section.clients article:nth-of-type(2) figure img{
+  // margin-left: -2rem;
+}
+main section.clients article blockquote {
+  width:45%;
+  border:none;
+  color:$quotCol;
+  margin:0 2rem;
+}
+main section.clients article blockquote p {
+  line-height:1.6;
+  text-align:justify;
+}
+main section.clients article blockquote h4 {
+  margin-top:0.8rem;
+  text-align:right;
+  color:$quotCol;
+  font-weight:300;
+}
+main section.clients article:nth-of-type(2) blockquote h4 {
+  text-align:left;
+}
+main section.clients article:nth-of-type(3) figure, main section.clients article:nth-of-type(3) blockquote{
+  width:70%;
+  margin:0 auto;
+}
+main section.build-your-own {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+}
+main section.build-your-own div.build-your-own-choices h2 {
+  text-align:center;
+  font-weight:400;
+  text-transform: capitalize;
+  font-size:2.4rem;
+}
+main section.build-your-own div.build-your-own-choices button{
+  display:block;
+  background:none;
+  outline:none;
+  margin:2rem;
+  border-radius:1rem;
+  padding:1rem 2rem;
 }

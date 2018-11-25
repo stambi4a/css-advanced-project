@@ -5,90 +5,192 @@
  * @description: A Simple Carousel Pure CSS Using Sass
  * @version: 1.0.0
  */
- $boolean: true !default;
- $current:1;
- $labCol:rgb(255,255,255);
- $labBor:2px solid $labCol;
- %animation-default {
+$boolean: true !default;
+$current:1;
+$labCol1:rgb(255, 255, 255);
+$indBor1:1px solid $labCol1;
+$labCol2:rgb(38, 0, 80);
+$indBor2:1px solid $labCol2;
+
+%animation-default {
   opacity: 1 !important;
   z-index: 3;
 }
+
+%measures1 {
+  margin-left: 0.95rem;
+  width: calc(10% - 1.3rem);
+}
+
+%measures2 {
+  margin-left: 0.95rem;
+  width: calc(10% - 1.3rem);
+  // margin-left: 4%;
+  // width: 6%;
+}
+
+%imHead1 {
+  top: 1rem;
+  left: 25%;
+  width: 50%;
+  color: $labCol1;
+}
+
+%imHead2 {
+  top: -1rem;
+  left: 25%;
+  width: 50%;
+  color: $labCol2;
+}
+
 @mixin animation-default-1($count) {
-  // opacity: 1 !important;
-  // z-index: 3;
-  // transform:translateX($count*300px);
-  @if $count >= -5 {
-    left:$count*10%;
-  } @else {
-    left:-60%;
+  @if $count>=-5 {
+    left: $count*10%;
+  }
+
+  @else {
+    left: -60%;
   }
 }
 
-@mixin carousel($items, $animation: 'default') {
-  .carousel {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+@mixin animation-default-2($count) {
+  @if $count>=-4 {
+    left: $count*10%;
+  }
 
-    > input[type="radio"] {
-      position: absolute;
-      left: 0;
-      opacity: 0;
-      top: 0;
+  @else {
+    left: -50%;
+  }
+}
 
-      // &:checked {
-      //   ~ .carousel__items .carousel__item,
-      //   ~ .carousel__prev > label,
-      //   ~ .carousel__next > label {
-      //     opacity: 1;
-      //   }
-      // }
+@mixin carousel($items, $animation, $selector, $indBor, $measures, $width, $imHead) {
+  #{$selector} {
+    .carousel {
+      position: relative;
+      width: 100%;
+      // position: relative;
+      overflow: hidden;
 
-      @for $i from 1 through $items {
+      >input[type="radio"] {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        top: 50%;
 
-        &:nth-child(#{$i}) {
-          &:checked {
-            @for $j from 1 through $items {
-              ~ .carousel__items .carousel__item {
-                &:nth-child(#{$j}) {
-                  @include animation-default-1(1-$i);
+        // &:checked {
+        //   ~ .carousel__items .carousel__item,
+        //   ~ .carousel__prev > label,
+        //   ~ .carousel__next > label {
+        //     opacity: 1;
+        //   }
+        // }
+
+        @for $i from 1 through $items {
+
+          &:nth-child(#{$i}) {
+            &:checked {
+              @for $j from 1 through $items {
+                ~.carousel__items .carousel__item {
+                  &:nth-child(#{$j}) {
+
+                    //@include animation-default-1(1-$i);
+                    @if $animation=="default-1" {
+                      @include animation-default-1(1-$i);
+                    }
+
+                    @else if $animation=="default-2" {
+                      @include animation-default-2(1-$i);
+                    }
+
+                    img {
+                      @if $animation=="default-2" {
+                        width: 100%;
+                      }
+                    }
+                  }
+
+                  @if $animation=="default-2" {
+                    @if $i <=6 {
+                      &:nth-child(#{$i+2}) {
+                        img {
+                          width: 180%;
+                          margin-left: -40%;
+                        }
+
+                        h3 {
+                          top: 2rem;
+                        }
+
+                        a {
+                          top: 4rem;
+                          display: block;
+                        }
+                      }
+                    }
+
+                    @else {
+                      &:nth-child(8) {
+                        img {
+                          @if $animation=="default-2" {
+                            width: 180%;
+                            margin-left: -40%;
+                          }
+                        }
+
+                        h3 {
+                          top: 2rem;
+                        }
+
+                        a {
+                          top: 4rem;
+                          display: block;
+                        }
+                      }
+                    }
+                  }
                 }
               }
-            }
-              ~ .carousel__prev {
-                > label {
-                  @if $i == 1 {
+
+              ~.carousel__prev {
+                >label {
+                  @if $i==1 {
                     &:nth-child(#{$items}) {
                       @extend %animation-default;
                     }
-                  } @else if $i == $items {
+                  }
+
+                  @else if $i==$items {
                     &:nth-child(#{$items - 1}) {
                       @extend %animation-default;
                     }
-                  } @else {
+                  }
+
+                  @else {
                     &:nth-child(#{$i - 1}) {
                       @extend %animation-default;
                     }
                   }
                 }
               }
-  
-              ~ .carousel__next {
-                > label {
-                  @if $i == $items {
+
+              ~.carousel__next {
+                >label {
+                  @if $i==$items {
                     &:nth-child(1) {
                       @extend %animation-default;
                     }
-                  } @else {
+                  }
+
+                  @else {
                     &:nth-child(#{$i + 1}) {
                       @extend %animation-default;
                     }
                   }
                 }
               }
-  
-              ~ .carousel__nav {
-                > label {
+
+              ~.carousel__nav {
+                >label {
                   &:nth-child(#{$i}) {
                     background: #ccc;
                     cursor: default;
@@ -96,134 +198,150 @@
                   }
                 }
               }
+            }
           }
         }
       }
-    }
 
-    &__items {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      width: 250%;
-      height: auto;
-      position: relative;
-    }
-
-    &__item {
-      display:inline-block;
-      position: relative;
-      top: 0;
-      left:0;
-      margin-left:0.95rem;
-      width: calc(10% - 1.3rem);
-      height:auto;
-      // z-index: 1;
-      transition: all 1s;
-      -webkit-transition: all 1s;
-      // transition: opacity 2s;
-      // -webkit-transition: opacity 2s;
-
-      img {
-        width: 100%;
-        vertical-align: middle;
+      &__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: #{$width};
+        height: auto;
+        position: relative;
       }
-      h3 {
-        position:absolute;
-        top:1rem;
-        left:25%;
-        width:50%;
-        text-align:center;
-        color:rgb(255,255,255);
-        text-transform:capitalize;
-        font-weight:300;
-      }
-    }
 
-    &__prev,
-    &__next {
-      > label {
-        border:  $labBor;
-        border-radius: 50%;
-        cursor: pointer;
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 50%;
-        // transform: translateY(-50%);
-        // -webkit-transform: translateY(-50%);
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        opacity: 0;
-        z-index: 2;
-
-        &:hover,
-        &:focus {
-          opacity: .5 !important;
-        }
-
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          width: inherit;
-          height: inherit;
-        }
-
-        &:before {
-          // background: linear-gradient(to top, #000 0%, #000 10%, rgba(51, 51, 51, 0) 10%),
-          //             linear-gradient(to left, #000 0%, #000 10%, rgba(51, 51, 51, 0) 10%);
-          border-right: $labBor;
-          border-bottom: $labBor;
-          width: 60%;
-          height: 60%;
-          top: 20%;
-        }
-      }
-    }
-
-    &__prev {
-      > label {
-        left: 2%;
-
-        &:before {
-          left: 35%;
-          top: 20%;
-          transform: rotate(135deg);
-          -webkit-transform: rotate(135deg);
-        }
-      }
-    }
-
-    &__next {
-      > label {
-        right: 2%;
-
-        &:before {
-          left: 10%;
-          transform: rotate(315deg);
-          -webkit-transform: rotate(315deg);
-        }
-      }
-    }
-
-    &__nav {
-      position: absolute;
-      bottom: 3%;
-      left: 0;
-      text-align: center;
-      width: 100%;
-      z-index: 3;
-
-      > label {
-        border: 1px solid #fff;
+      &__item {
         display: inline-block;
-        border-radius: 50%;
-        cursor: pointer;
-        margin: 0 .125%;
-        width: 20px;
-        height: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        // margin-left: 0.95rem;
+        // width: calc(10% - 1.3rem);
+        @extend %#{$measures};
+        height: auto;
+        // z-index: 1;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        // transition: opacity 2s;
+        // -webkit-transition: opacity 2s;
+
+        img {
+          width: 100%;
+          vertical-align: middle;
+          transition: all 0.5s -0.45s;
+          // -webkit-transition: all 1s;
+        }
+
+        h3 {
+          display: block;
+          position: absolute;
+          @extend %#{$imHead};
+          text-align: center;
+          text-transform: capitalize;
+          font-weight: 300;
+        }
+
+        a {
+          text-transform: uppercase;
+          text-align: center;
+          margin-left: 30%;
+          color: purple;
+          display: none;
+          position: relative;
+          left: -2.5rem;
+          top: 1rem;
+          font-weight: 600;
+          // display:none;
+        }
+      }
+
+      &__prev,
+      &__next {
+        >label {
+          border: $indBor;
+          border-radius: 50%;
+          cursor: pointer;
+          display: block;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 50%;
+          // transform: translateY(-50%);
+          // -webkit-transform: translateY(-50%);
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease;
+          opacity: 1;
+          z-index: 2;
+
+          &:hover,
+          &:focus {
+            opacity: 1 !important;
+          }
+
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            width: inherit;
+            height: inherit;
+          }
+
+          &:before {
+            // background: linear-gradient(to top, #000 0%, #000 10%, rgba(51, 51, 51, 0) 10%),
+            //             linear-gradient(to left, #000 0%, #000 10%, rgba(51, 51, 51, 0) 10%);
+            border-right: $indBor;
+            border-bottom: $indBor;
+            width: 60%;
+            height: 60%;
+            top: 20%;
+          }
+        }
+      }
+
+      &__prev {
+        >label {
+          left: 2%;
+
+          &:before {
+            left: 35%;
+            top: 20%;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+          }
+        }
+      }
+
+      &__next {
+        >label {
+          right: 2%;
+
+          &:before {
+            left: 10%;
+            transform: rotate(315deg);
+            -webkit-transform: rotate(315deg);
+          }
+        }
+      }
+
+      &__nav {
+        position: absolute;
+        bottom: 3%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 3;
+
+        >label {
+          border: 1px solid #fff;
+          display: inline-block;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 .125%;
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -248,4 +366,5 @@ body {
   margin: 3rem auto;
 }
 
-@include carousel(10);
+@include carousel(10, "default-1", ".main-categories", $indBor1, measures1, 250%, imHead1);
+@include carousel(10, "default-2", ".special-collection", $indBor2, measures2, 200%, imHead2);
