@@ -1,6 +1,6 @@
 $headCol:rgb(61, 0, 112);
 $bigCol:rgb(40, 40, 164);
-$linkCol:rgb(48, 1, 29);
+$linkCol:rgb(38, 0, 80);
 $liBgCol:rgb(75, 143, 252);
 $offersBgCol:rgb(250, 253, 255);
 $bigBorCol:rgb(226, 236, 255);
@@ -8,6 +8,7 @@ $headBorCol:rgb(237, 219, 255);
 $linkBorCol:rgb(237, 219, 255);
 $menuBorCol:rgb(221, 197, 210);
 $white:rgb(255,255,255);
+$weekCol:rgb(99, 1, 60);
 $borLink:1px solid $linkBorCol;
 $borLight:1px solid $bigBorCol;
 $borDark:1px solid $headCol;
@@ -17,13 +18,13 @@ $fontAll:0.9rem;
 $fontLinks:1rem;
 $fontBig:1.6rem;
 $fontHead:1.2rem;
-@mixin formField() {
+%formField {
   border-radius:0.2rem;
   border:$borDark;
   outline:none;
   color:$headCol;
 }
-@mixin linkHover() {
+%linkHover {
   border-radius:0.2rem;
   box-shadow:0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
 }
@@ -41,20 +42,24 @@ i.fa {
   color:$headCol;
 }
 input, select, option {
-  @include formField();
+  @extend %formField;
+}
+h1,h2,h3,h4,h5,h6 {
+  color:$headCol;
 }
 header {
   // height:10rem;
+  padding:1rem;
   display:grid;
   align-items: center;
   grid-row-gap:1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows:50px 20px 5px 200px;
+  grid-template-rows:50px 20px 20px 2px;
   grid-template-areas: 
     "logo info-message info-message info-message auth" 
     "search offers offers offers user"
-    "hr hr hr hr hr"
-    "main-nav main-nav main-nav main-nav main-nav";
+    "main-nav main-nav main-nav main-nav main-nav"
+    "hr hr hr hr hr";
 }
 header * {
   text-align:center;
@@ -64,6 +69,9 @@ header hr {
   height:1px;
   border:none;
   background-color:$headCol;
+  margin-top:-0.3rem;
+  margin-left:0.2rem;
+  margin-right:-0.1rem;
 }
 header .logo {
   padding-top:0.5rem;
@@ -244,12 +252,24 @@ header .main-nav {
   grid-area: main-nav;
   align-self:start;
 }
+header .main-nav a {
+  color:$linkCol;
+}
+header .main-nav .main-menu {
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  width:100%;
+}
+header .main-nav .main-menu ul{
+  background:white;
+}
 header .main-nav  a {
   font-size:$fontAll;
 }
-header nav.main-nav >ul > li{
-  width:15%;
-}
+// header nav.main-nav >ul > li{
+//   width:15%;
+// }
 header nav ul li {
   display:inline-block;
 }
@@ -261,22 +281,22 @@ header nav.main-nav li a {
 header nav.main-nav > ul.main-menu{
   position:relative;
   top:0;
-  left:1.5rem;
+  // left:1.5rem;
 }
 header nav.main-nav > ul.main-menu > li {
-  vertical-align:top;
-  text-align:left;
+  // vertical-align:top;
+  // text-align:left;
 }
 header nav.main-nav > ul.main-menu > li *{
   text-align:left;
 }
 header nav.main-nav > ul.main-menu > li > a {
-  padding:0.1rem 0.3rem;
+  padding:0.2rem 0.3rem 0.3rem 0.3rem;
   display:block;
-  width:90%;
+  width:100%;
 }
 header nav.main-nav > ul.main-menu > li:hover >   a{
-  @include linkHover;
+  @extend %linkHover;
 }
 header nav.main-nav > ul.main-menu > li > a,header nav.main-nav > ul.main-menu > li > ul > li > a {
   font-weight:600;
@@ -284,7 +304,7 @@ header nav.main-nav > ul.main-menu > li > a,header nav.main-nav > ul.main-menu >
 header nav.main-nav > ul.main-menu > li > ul {
   // display:none;
   position:absolute;
-  top:1.4rem;
+  top:1.8rem;
   border:$menuBor;
   padding:0.9rem;
   display:none;
@@ -305,10 +325,7 @@ header nav.main-nav > ul.main-menu > li > ul > li {
   margin:0 1rem;
 }
 header nav.main-nav > ul.main-menu > li > ul > li > a:hover{
-  // text-decoration: underline;
-  // background:$linkCol;
-  // color:$white;
-  @include linkHover;
+  @extend %linkHover;
 }
 header nav.main-nav > ul.main-menu > li > ul > li > ul{
   margin-top:0.3rem;
@@ -326,7 +343,6 @@ header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover {
   box-shadow:0 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
 }
 header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover > a {
-  // @include linkHover;
 }
 header nav.main-nav > ul.main-menu > li > ul > li > ul.diamonds-submenu-first, 
 header nav.main-nav > ul.main-menu > li > ul > li > ul.jewelry-submenu-first,
@@ -336,4 +352,42 @@ header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first
 }
 header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first > li > a {
   text-align:center;
+}
+main {
+  margin-top:1rem;
+  padding:1rem;
+}
+main section.week-offers {
+  background:url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+  background-size:cover;
+  height:26rem;
+}
+main section.week-offers h1 {
+  padding:1.5rem 0 0 5rem;
+  font-weight:lighter;
+  font-size:3rem;
+}
+main section.week-offers h1 span{
+  color:$weekCol;
+}
+main section.week-offers h1.week-offer-rabat {
+  padding-top:0;
+}
+main section.week-offers h3 {
+  padding:1.5rem 0 0 5rem;
+  font-weight:lighter;
+  width:25%;
+  font-family:$headFont;
+}
+main section.week-offers a {
+  display:block;
+  padding:1.2rem 0 0 5rem;
+  font-size:1.3rem;
+  font-weight:600;
+  // font-family:$headFont;
+  color:$headCol;
+  text-transform: uppercase;
+}
+main section.main-categories {
+  position:relative;
 }

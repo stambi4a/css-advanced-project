@@ -1,3 +1,13 @@
+input, select, option {
+  border-radius: 0.2rem;
+  border: 1px solid #3d0070;
+  outline: none;
+  color: #3d0070; }
+
+header nav.main-nav > ul.main-menu > li:hover > a, header nav.main-nav > ul.main-menu > li > ul > li > a:hover {
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
+
 a {
   text-decoration: none; }
 
@@ -8,19 +18,17 @@ i.fa {
   font-size: 1rem;
   color: #3d0070; }
 
-input, select, option {
-  border-radius: 0.2rem;
-  border: 1px solid #3d0070;
-  outline: none;
+h1, h2, h3, h4, h5, h6 {
   color: #3d0070; }
 
 header {
+  padding: 1rem;
   display: grid;
   align-items: center;
   grid-row-gap: 1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 50px 20px 5px 200px;
-  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "hr hr hr hr hr" "main-nav main-nav main-nav main-nav main-nav"; }
+  grid-template-rows: 50px 20px 20px 2px;
+  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr"; }
 
 header * {
   text-align: center; }
@@ -29,7 +37,10 @@ header hr {
   grid-area: hr;
   height: 1px;
   border: none;
-  background-color: #3d0070; }
+  background-color: #3d0070;
+  margin-top: -0.3rem;
+  margin-left: 0.2rem;
+  margin-right: -0.1rem; }
 
 header .logo {
   padding-top: 0.5rem;
@@ -205,10 +216,19 @@ header .main-nav {
   align-self: start; }
 
 header .main-nav a {
-  font-size: 0.9rem; }
+  color: #260050; }
 
-header nav.main-nav > ul > li {
-  width: 15%; }
+header .main-nav .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%; }
+
+header .main-nav .main-menu ul {
+  background: white; }
+
+header .main-nav a {
+  font-size: 0.9rem; }
 
 header nav ul li {
   display: inline-block; }
@@ -219,31 +239,22 @@ header nav.main-nav li a {
 
 header nav.main-nav > ul.main-menu {
   position: relative;
-  top: 0;
-  left: 1.5rem; }
-
-header nav.main-nav > ul.main-menu > li {
-  vertical-align: top;
-  text-align: left; }
+  top: 0; }
 
 header nav.main-nav > ul.main-menu > li * {
   text-align: left; }
 
 header nav.main-nav > ul.main-menu > li > a {
-  padding: 0.1rem 0.3rem;
+  padding: 0.2rem 0.3rem 0.3rem 0.3rem;
   display: block;
-  width: 90%; }
-
-header nav.main-nav > ul.main-menu > li:hover > a {
-  border-radius: 0.2rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
+  width: 100%; }
 
 header nav.main-nav > ul.main-menu > li > a, header nav.main-nav > ul.main-menu > li > ul > li > a {
   font-weight: 600; }
 
 header nav.main-nav > ul.main-menu > li > ul {
   position: absolute;
-  top: 1.4rem;
+  top: 1.8rem;
   border: 1px outset #ddc5d2;
   padding: 0.9rem;
   display: none;
@@ -262,10 +273,6 @@ header nav.main-nav > ul.main-menu > li > ul > li > a {
 
 header nav.main-nav > ul.main-menu > li > ul > li {
   margin: 0 1rem; }
-
-header nav.main-nav > ul.main-menu > li > ul > li > a:hover {
-  border-radius: 0.2rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
 
 header nav.main-nav > ul.main-menu > li > ul > li > ul {
   margin-top: 0.3rem;
@@ -289,3 +296,40 @@ header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first
 
 header nav.main-nav > ul.main-menu > li > ul > li > ul.birthstones-submenu-first > li > a {
   text-align: center; }
+
+main {
+  margin-top: 1rem;
+  padding: 1rem; }
+
+main section.week-offers {
+  background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+  background-size: cover;
+  height: 26rem; }
+
+main section.week-offers h1 {
+  padding: 1.5rem 0 0 5rem;
+  font-weight: lighter;
+  font-size: 3rem; }
+
+main section.week-offers h1 span {
+  color: #63013c; }
+
+main section.week-offers h1.week-offer-rabat {
+  padding-top: 0; }
+
+main section.week-offers h3 {
+  padding: 1.5rem 0 0 5rem;
+  font-weight: lighter;
+  width: 25%;
+  font-family: "Oleo Script"; }
+
+main section.week-offers a {
+  display: block;
+  padding: 1.2rem 0 0 5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3d0070;
+  text-transform: uppercase; }
+
+main section.main-categories {
+  position: relative; }

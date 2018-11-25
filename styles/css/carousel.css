@@ -1,0 +1,359 @@
+/**
+ * Carousel.sass
+ * @author: Dang Van Thanh
+ * @github: https://github.com/dangvanthanh/carousel.sass
+ * @description: A Simple Carousel Pure CSS Using Sass
+ * @version: 1.0.0
+ */
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background: #fcfcfc;
+  margin: 0; }
+
+.container {
+  width: 90%;
+  min-width: 95%;
+  margin: 3rem auto; }
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .carousel > input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: 0%; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -10%; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -20%; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -30%; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -40%; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -50%; }
+    .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__nav > label:nth-child(8) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__nav > label:nth-child(9) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -60%; }
+    .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__nav > label:nth-child(10) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+  .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 250%;
+    height: auto;
+    position: relative; }
+  .carousel__item {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0.95rem;
+    width: calc(10% - 1.3rem);
+    height: auto;
+    transition: all 1s;
+    -webkit-transition: all 1s; }
+    .carousel__item img {
+      width: 100%;
+      vertical-align: middle; }
+    .carousel__item h3 {
+      position: absolute;
+      top: 1rem;
+      left: 25%;
+      width: 50%;
+      text-align: center;
+      color: white;
+      text-transform: capitalize;
+      font-weight: 300; }
+  .carousel__prev > label, .carousel__next > label {
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    opacity: 0;
+    z-index: 2; }
+    .carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+      opacity: .5 !important; }
+    .carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+      content: "";
+      position: absolute;
+      width: inherit;
+      height: inherit; }
+    .carousel__prev > label:before, .carousel__next > label:before {
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 60%;
+      height: 60%;
+      top: 20%; }
+  .carousel__prev > label {
+    left: 2%; }
+    .carousel__prev > label:before {
+      left: 35%;
+      top: 20%;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg); }
+  .carousel__next > label {
+    right: 2%; }
+    .carousel__next > label:before {
+      left: 10%;
+      transform: rotate(315deg);
+      -webkit-transform: rotate(315deg); }
+  .carousel__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3; }
+    .carousel__nav > label {
+      border: 1px solid #fff;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 .125%;
+      width: 20px;
+      height: 20px; }

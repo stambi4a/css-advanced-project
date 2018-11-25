@@ -8,9 +8,7 @@
 
 //---Section variables and functions
 
-$headCol:rgb(27, 5, 77);
-$linkCol:rgb(61, 0, 112);
-@mixin defSet() {
+%defSet {
   margin:0;
   padding: 0;
 }
@@ -24,12 +22,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6{
-font-family: "Berkshire Swash", serif;
-@include defSet;
-color:$headCol;
+font-family: "Oleo Script", serif;
+@extend %defSet;
+
 }
 
-h1 { font-size: 2.2rem; }
+h1 { font-size: 2.5rem; }
 h2 { font-size: 1.6rem; }
 h3 { font-size: 1.4rem; }
 h4 { font-size: 1.2rem; }
@@ -37,11 +35,7 @@ h5 { font-size: 1.0rem; }
 h6 { font-size: 0.8rem; }
 
 p {
-  @include defSet;
-}
-
-p,span,a {
-	color:$linkCol;
+  @extend %defSet;
 }
 
 ol, ul, dl {
@@ -49,7 +43,7 @@ margin: 0;
 }
 
 ul, ol {
-  @include defSet;
+  @extend %defSet;
 }
 
 ul li, ol li {
@@ -57,12 +51,12 @@ list-style-position: inside;
 }
 
 ul ul {
-  @include defSet;
+  @extend %defSet;
 }
 
-ul li { list-style-type: none; @include defSet;}
-ul ul li { list-style-type: none; @include defSet;}
-ul ul ul li { list-style-type: none; @include defSet;}
+ul li { list-style-type: none; @extend %defSet;}
+ul ul li { list-style-type: none; @extend %defSet;}
+ul ul ul li { list-style-type: none; @extend %defSet;}
 
 blockquote {
 border-left: 4px solid #DDD;

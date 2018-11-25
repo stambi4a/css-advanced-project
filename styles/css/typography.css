@@ -5,17 +5,18 @@
 @import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+h1, h2, h3, h4, h5, h6, p, ul, ol, ul ul, ul li, ul ul li, ul ul ul li {
+  margin: 0;
+  padding: 0; }
+
 html {
   font: 14px/1.5 "Montserrat", serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Berkshire Swash", serif;
-  margin: 0;
-  padding: 0;
-  color: #1b054d; }
+  font-family: "Oleo Script", serif; }
 
 h1 {
-  font-size: 2.2rem; }
+  font-size: 2.5rem; }
 
 h2 {
   font-size: 1.6rem; }
@@ -32,41 +33,20 @@ h5 {
 h6 {
   font-size: 0.8rem; }
 
-p {
-  margin: 0;
-  padding: 0; }
-
-p, span, a {
-  color: #3d0070; }
-
 ol, ul, dl {
   margin: 0; }
-
-ul, ol {
-  margin: 0;
-  padding: 0; }
 
 ul li, ol li {
   list-style-position: inside; }
 
-ul ul {
-  margin: 0;
-  padding: 0; }
-
 ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  list-style-type: none; }
 
 ul ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  list-style-type: none; }
 
 ul ul ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  list-style-type: none; }
 
 blockquote {
   border-left: 4px solid #DDD;
