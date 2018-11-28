@@ -1,8 +1,16 @@
-input, select, option {
+footer section.featured ul li h6, footer section.subscribe h6, footer section.subscribe a {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.8rem; }
+
+input,
+select,
+option {
   border-radius: 0.2rem;
   border: 1px solid #3d0070;
   outline: none;
-  color: #3d0070; }
+  color: #3d0070;
+  background: none; }
 
 header nav.main-nav > ul.main-menu > li:hover > a, header nav.main-nav > ul.main-menu > li > ul > li > a:hover {
   border-radius: 0.2rem;
@@ -18,7 +26,12 @@ i.fa {
   font-size: 1rem;
   color: #3d0070; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #3d0070; }
 
 header {
@@ -28,7 +41,7 @@ header {
   grid-row-gap: 1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 50px 20px 20px 2px;
-  grid-template-areas: "logo info-message info-message info-message auth"  "search offers offers offers user" "main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr"; }
+  grid-template-areas: "logo info-message info-message info-message auth" "search offers offers offers user" "main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr"; }
 
 header * {
   text-align: center; }
@@ -88,18 +101,22 @@ header .info-message button {
 header .auth {
   grid-area: auth; }
 
-header .auth a, header .auth span {
+header .auth a,
+header .auth span {
   color: #3d0070;
   font-size: 1rem; }
 
-header .auth i, header .auth select {
+header .auth i,
+header .auth select {
   margin: 0 0.3rem; }
 
-header .user select, header .user select option {
+header .user select,
+header .user select option {
   font-weight: bold;
   color: #3d0070; }
 
-header ul.auth li, header ul.user li {
+header ul.auth li,
+header ul.user li {
   display: inline-block; }
 
 header ul.user {
@@ -249,7 +266,8 @@ header nav.main-nav > ul.main-menu > li > a {
   display: block;
   width: 100%; }
 
-header nav.main-nav > ul.main-menu > li > a, header nav.main-nav > ul.main-menu > li > ul > li > a {
+header nav.main-nav > ul.main-menu > li > a,
+header nav.main-nav > ul.main-menu > li > ul > li > a {
   font-weight: 600; }
 
 header nav.main-nav > ul.main-menu > li > ul {
@@ -360,7 +378,8 @@ main section.jewelry-gifts a {
 main section.special-collection {
   margin-top: 2rem; }
 
-main section.special-collection > h2, main section.special-collection > h3 {
+main section.special-collection > h2,
+main section.special-collection > h3 {
   text-align: center;
   font-weight: 400;
   text-transform: capitalize; }
@@ -371,7 +390,8 @@ main section.special-collection > h2 {
 main section.special-collection > h3 {
   font-size: 2rem; }
 
-main section.clients > h2, main section.clients > h3 {
+main section.clients > h2,
+main section.clients > h3 {
   text-align: center;
   font-weight: 400;
   text-transform: capitalize; }
@@ -416,16 +436,20 @@ main section.clients article blockquote h4 {
   margin-top: 0.8rem;
   text-align: right;
   color: #7900ff;
-  font-weight: 300; }
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0; }
 
 main section.clients article:nth-of-type(2) blockquote h4 {
   text-align: left; }
 
-main section.clients article:nth-of-type(3) figure, main section.clients article:nth-of-type(3) blockquote {
+main section.clients article:nth-of-type(3) figure,
+main section.clients article:nth-of-type(3) blockquote {
   width: 70%;
   margin: 0 auto; }
 
 main section.build-your-own {
+  margin-top: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
@@ -436,10 +460,192 @@ main section.build-your-own div.build-your-own-choices h2 {
   text-transform: capitalize;
   font-size: 2.4rem; }
 
-main section.build-your-own div.build-your-own-choices button {
-  display: block;
-  background: none;
-  outline: none;
+main section.build-your-own div.build-your-own-choices .choice {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+main section.build-your-own div.build-your-own-choices .choice a {
+  border: 1px solid #260050;
   margin: 2rem;
-  border-radius: 1rem;
-  padding: 1rem 2rem; }
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 20rem; }
+
+main section.build-your-own div.build-your-own-choices .choice a:hover {
+  background: #260050;
+  color: white; }
+
+main section.build-your-own div.build-your-own-choices .ask-for-advice {
+  margin-left: 2rem; }
+
+main section.build-your-own div.build-your-own-choices .ask-for-advice p {
+  display: block;
+  font-size: 1.2rem; }
+
+main section.build-your-own div.build-your-own-choices .ask-for-advice a {
+  display: inline-block;
+  color: #260050;
+  padding-top: 0.6rem;
+  font-size: 1.2rem; }
+
+main section.build-your-own div.build-your-own-choices .ask-for-advice a i {
+  padding: 0 0.2rem;
+  font-size: 1.2rem; }
+
+main section.build-your-own div.build-your-own-choices .ask-for-advice span {
+  color: #2828a4; }
+
+footer {
+  margin: 2rem;
+  background: #fbf4ff; }
+  footer section.featured {
+    width: 100%;
+    background: rgba(240, 220, 240, 0.6);
+    padding: 0.5rem 1rem; }
+    footer section.featured ul {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around; }
+      footer section.featured ul li img {
+        display: block;
+        width: 90%;
+        margin: 0 auto; }
+      footer section.featured ul li h6 {
+        color: black;
+        padding-bottom: 0.8rem; }
+        footer section.featured ul li h6.feat-start {
+          transform: rotate(-45deg); }
+        footer section.featured ul li h6.feat-end {
+          transform: rotate(45deg); }
+  footer section.subscribe {
+    padding: 1rem; }
+    footer section.subscribe h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.6rem; }
+    footer section.subscribe div {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      footer section.subscribe div input {
+        padding: 0.6rem 2rem; }
+      footer section.subscribe div [type="text"] {
+        width: 35%;
+        margin-right: 0.7rem;
+        color: #3d0070; }
+        footer section.subscribe div [type="text"]::placeholder {
+          color: #3d0070; }
+      footer section.subscribe div [type="submit"] {
+        width: 20%;
+        margin-right: 0.7rem;
+        font-weight: 600; }
+        footer section.subscribe div [type="submit"]:hover {
+          background: #3d0070;
+          color: white; }
+    footer section.subscribe h6, footer section.subscribe a {
+      display: inline-block;
+      text-align: center;
+      margin: 0.4rem 0.3rem; }
+    footer section.subscribe h6 {
+      color: #4b8ffc;
+      font-weight: 400; }
+    footer section.subscribe a {
+      color: #3d0070;
+      font-weight: 900; }
+  footer section.links {
+    background-color: rgba(240, 220, 240, 0.6);
+    margin-top: 1.5rem;
+    padding: 1rem; }
+    footer section.links a:hover {
+      text-decoration: underline; }
+    footer section.links > ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: stretch; }
+      footer section.links > ul > li {
+        display: inline-block; }
+        footer section.links > ul > li > a {
+          text-decoration: underline;
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: 800; }
+        footer section.links > ul > li > ul > li {
+          display: block; }
+  footer section.social {
+    background: #3d0070;
+    padding: 2rem 1rem;
+    margin-top: 1rem; }
+    footer section.social ul {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      footer section.social ul li {
+        margin: 1rem 1rem;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        background: url("/images/backgrounds/frame.png") no-repeat center center;
+        background-size: cover; }
+      footer section.social ul a i {
+        font-size: 2rem;
+        border-radius: 0.2rem;
+        padding: 0.3rem; }
+        footer section.social ul a i.fa-facebook {
+          background-color: #3c5a99;
+          color: white; }
+        footer section.social ul a i.fa-twitter {
+          color: #5da9dd; }
+        footer section.social ul a i.fa-whatsapp {
+          color: white;
+          background-color: #5efa7a;
+          border-radius: 0.7rem; }
+        footer section.social ul a i.fa-pinterest-p {
+          color: white;
+          background-color: #bd081b;
+          border-radius: 50%;
+          margin: 0 auto;
+          display: block; }
+        footer section.social ul a i.fa-instagram {
+          background-image: linear-gradient(135deg, #4b3eb0, #d22577, #fdc056);
+          color: white;
+          border-radius: 0.7rem; }
+  footer section.certificates {
+    background-color: white;
+    margin-top: 1.5rem; }
+    footer section.certificates a:hover {
+      text-decoration: underline; }
+    footer section.certificates > ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: stretch; }
+      footer section.certificates > ul > li {
+        display: inline-block; }
+        footer section.certificates > ul > li > a {
+          text-decoration: underline;
+          display: block;
+          font-weight: 800; }
+        footer section.certificates > ul > li > ul > li {
+          display: block; }
+  footer section.all-rights {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    background: #260050;
+    color: white;
+    text-align: center; }
+    footer section.all-rights * {
+      margin: 0.2rem; }
+    footer section.all-rights a {
+      color: #b2d1ff; }

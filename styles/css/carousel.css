@@ -36,10 +36,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
-body {
-  background: #fcfcfc;
-  margin: 0; }
-
 .container {
   width: 90%;
   min-width: 95%;
