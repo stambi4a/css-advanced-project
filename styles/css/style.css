@@ -72,7 +72,7 @@ header .info-message {
   height: 50px;
   grid-area: info-message;
   border-radius: 0.6rem;
-  background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
+  background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("images/banners/blue-deal-of-the-month.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
@@ -320,7 +320,7 @@ main {
   padding: 1rem; }
 
 main section.week-offers {
-  background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+  background: url("images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
   background-size: cover;
   height: 26rem; }
 
@@ -350,7 +350,7 @@ main section.week-offers a {
   text-transform: uppercase; }
 
 main section.jewelry-gifts {
-  background: url("/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+  background: url("images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
   background-size: cover;
   height: 26rem; }
 
@@ -596,7 +596,7 @@ footer {
         vertical-align: middle;
         justify-content: center;
         align-items: center;
-        background: url("/images/backgrounds/frame.png") no-repeat center center;
+        background: url("images/backgrounds/frame.png") no-repeat center center;
         background-size: cover; }
       footer section.social ul a i {
         font-size: 2rem;
