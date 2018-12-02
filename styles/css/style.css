@@ -427,7 +427,10 @@ header.home-header {
   grid-row-gap: 1rem;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 50px 20px 20px 2px;
-  grid-template-areas: "logo info-message info-message info-message auth" "search offers offers offers user" "main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr"; }
+  grid-template-areas: "logo info-message info-message info-message auth"
+ "search offers offers offers user"
+ "main-nav main-nav main-nav main-nav main-nav"
+ "hr hr hr hr hr"; }
   header.home-header * {
     text-align: center; }
   header.home-header hr {
@@ -452,7 +455,7 @@ header.home-header {
     height: 50px;
     grid-area: info-message;
     border-radius: 0.6rem;
-    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
+    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/css-advanced-project/images/banners/blue-deal-of-the-month.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -663,7 +666,7 @@ main.home-main {
   margin-top: 1rem;
   padding: 1rem; }
   main.home-main section.week-offers {
-    background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background: url("/css-advanced-project/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
     height: 26rem; }
   main.home-main section.week-offers h1 {
@@ -689,7 +692,7 @@ main.home-main {
   main.home-main section.main-categories {
     margin: 2rem auto; }
   main.home-main section.jewelry-gifts {
-    background: url("/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background: url("/css-advanced-project/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
     background-size: cover;
     height: 26rem; }
   main.home-main section.jewelry-gifts .text-right {
@@ -2537,7 +2540,7 @@ main.auth-main {
   main.auth-main * {
     font-family: inherit; }
   main.auth-main section.auth {
-    background: url("/images/backgrounds/auth-bg.jpg") no-repeat center center;
+    background: url("/css-advanced-project/images/backgrounds/auth-bg.jpg") no-repeat center center;
     background-size: cover;
     padding: 5rem 0; }
     main.auth-main section.auth article.auth-container {
@@ -2758,7 +2761,7 @@ footer {
         vertical-align: middle;
         justify-content: center;
         align-items: center;
-        background: url("/images/backgrounds/frame.png") no-repeat center center;
+        background: url("/css-advanced-project/images/backgrounds/frame.png") no-repeat center center;
         background-size: cover; }
       footer section.social ul a i {
         font-size: 2rem;
