@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <base href="/css-advanced-project/">
+  <base href="/king-of-diamonds">
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/typography.css">
   <link rel="stylesheet" href="styles/css/carousel.css">
   <link rel="stylesheet" href="styles/css/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/scripts/user-interface.js"></script>
+  <!-- <script type="text/javascript" src="scripts/user-interface.js"></script> -->
   <title>King of Diamonds</title>
 </head>
+
 <body>
   <header class="home-header">
     <div class="info-message" id="info-message">
@@ -28,6 +29,13 @@
       <li><span> | </span></li>
       <li><a href="html/register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign Up</a></li>
     </ul>
+    <ul class="personal">
+        <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i></a></li>
+        <li><span> | </span></li>
+        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+        <li><span> | </span></li>
+        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+      </ul>
     <ul class="user">
       <li>
         <select class="language">
@@ -47,17 +55,17 @@
           <option value="&#165;">CHN(&#165;)</option>
         </select>
       </li>
-      <li>
-        <span>US </span><img src="images/flags/USA.png" alt="" /><i class="fa fa-caret-down" aria-hidden="true"></i>
+      <li class="country-holder">
         <ul class="country">
-          <li><span>US </span><img src="images/flags/USA.png" alt="" /></li>
-          <li><span>UK </span><img src="images/flags/UK.png" alt="" /></li>
-          <li><span>FR </span><img src="images/flags/FR.png" alt="" /></li>
-          <li><span>DE </span><img src="images/flags/DE.png" alt="" /></li>
-          <li><span>ES </span><img src="images/flags/SP.png" alt="" /></li>
-          <li><span>IT </span><img src="images/flags/IT.png" alt="" /></li>
-          <li><span>RU </span><img src="images/flags/RU.png" alt="" /></li>
-          <li><span>CH </span><img src="images/flags/CH.png" alt="" /></li>
+            <li><label><input type="radio" name="flag" checked/><span>US </span><img src="images/flags/USA.png" alt="" /><span>US </span><img src="images/flags/USA.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>UK </span><img src="images/flags/UK.png" alt="" /><span>UK </span><img src="images/flags/UK.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>FR </span><img src="images/flags/FR.png" alt="" /><span>FR </span><img src="images/flags/FR.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>DE </span><img src="images/flags/DE.png" alt="" /><span>DE </span><img src="images/flags/DE.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>ES </span><img src="images/flags/SP.png" alt="" /><span>ES </span><img src="images/flags/SP.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>IT </span><img src="images/flags/IT.png" alt="" /><span>IT </span><img src="images/flags/IT.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>RU </span><img src="images/flags/RU.png" alt="" /><span>RU </span><img src="images/flags/RU.png" alt="" /></label></li>
+            <li><label><input type="radio" name="flag" /><span>CH </span><img src="images/flags/CH.png" alt="" />
+              <span>CH </span><img src="images/flags/CH.png" alt="" /></label></li>
         </ul>
       </li>
     </ul>
@@ -71,10 +79,15 @@
     </ul>
     <hr>
     <nav class="main-nav">
+      <input type="checkbox" />
+      <div class="hamburger">
+        <!-- <span class="fa"></span> -->
+      </div>
+
       <ul class="main-menu">
-        <li><a href="#">Diamonds</a>
+        <li class="has-menu"><a href="#">Diamonds</a><input type="checkbox" /><span></span>
           <ul class="diamonds-submenu">
-            <li><a href="#">Diamond shapes</a>
+            <li class="has-menu"><a href="#">Diamond shapes</a><input type="checkbox" /><span></span>
               <ul class="diamonds-submenu-first">
                 <li><a href="">Round</a></li>
                 <li><a href="">Ascher</a></li>
@@ -88,7 +101,7 @@
                 <li><a href="">Pear</a></li>
               </ul>
             </li>
-            <li><a href="#">Diamond configurator</a>
+            <li class="has-menu"><a href="#">Diamond configurator</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Style configurator</a></li>
                 <li><a href="">Match a setting</a></li>
@@ -96,7 +109,7 @@
                 <li><a href="">For the gentlemen</a></li>
               </ul>
             </li>
-            <li><a href="#">Diamond guide</a>
+            <li class="has-menu"><a href="#">Diamond guide</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">What to look for</a></li>
                 <li><a href="">Why is it worth it</a></li>
@@ -104,7 +117,7 @@
                 <li><a href="">Diamonds explained</a></li>
               </ul>
             </li>
-            <li><a href="#">View all diamonds</a>
+            <li class="has-menu"><a href="#">View all diamonds</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">All collections</a></li>
                 <li><a href="">Astor collection</a></li>
@@ -113,9 +126,9 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">Jewelry</a>
+        <li class="has-menu"><a href="#">Jewelry</a><input type="checkbox" /><span></span>
           <ul class="jewelry-submenu">
-            <li><a href="#">Ring styles</a>
+            <li class="has-menu"><a href="#">Ring styles</a><input type="checkbox" /><span></span>
               <ul class="jewelry-submenu-first">
                 <li><a href="#">Solitaire</a></li>
                 <li><a href="#">Diamond Band</a></li>
@@ -129,7 +142,7 @@
                 <li><a href="#">Rose gold</a></li>
               </ul>
             </li>
-            <li><a href="#">Rings</a>
+            <li class="has-menu"><a href="#">Rings</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Rings configurator</a></li>
                 <li><a href="">Rings by shape</a></li>
@@ -140,7 +153,7 @@
                 <li><a href="">Build your own</a></li>
               </ul>
             </li>
-            <li><a href="#">Necklaces</a>
+            <li class="has-menu"><a href="#">Necklaces</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Diamond</a></li>
                 <li><a href="">Precious Metals</a></li>
@@ -148,7 +161,7 @@
                 <li><a href="">Build your own</a></li>
               </ul>
             </li>
-            <li><a href="#">Earrings</a>
+            <li class="has-menu"><a href="#">Earrings</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Diamond</a></li>
                 <li><a href="">Precious Metals</a></li>
@@ -156,7 +169,7 @@
                 <li><a href="">Build your own</a></li>
               </ul>
             </li>
-            <li><a href="#">Bracelets</a>
+            <li class="has-menu"><a href="#">Bracelets</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Diamond</a></li>
                 <li><a href="">Precious Metals</a></li>
@@ -166,9 +179,9 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">Occassions</a>
+        <li class="has-menu"><a href="#">Occassions</a><input type="checkbox" /><span></span>
           <ul class="occassions-submenu">
-            <li><a href="#">Engagement Rings Styles</a>
+            <li class="has-menu"><a href="#">Engagement Rings Styles</a><input type="checkbox" /><span></span>
               <ul class="occassions-submenu-first">
                 <li><a href="#">Solitaire</a></li>
                 <li><a href="#">Diamond Band</a></li>
@@ -177,7 +190,7 @@
                 <li><a href="#">Trilogy</a></li>
               </ul>
             </li>
-            <li><a href="#">Engagement Rings Configurator</a>
+            <li class="has-menu"><a href="#">Engagement Rings Configurator</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">By Shape</a></li>
                 <li><a href="">Men's enagement rings</a></li>
@@ -186,21 +199,21 @@
                 <li><a href="">Rings Size Guide</a></li>
               </ul>
             </li>
-            <li><a href="#">Weddings Rings</a>
+            <li class="has-menu"><a href="#">Weddings Rings</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Classic</a></li>
                 <li><a href="">Women's Diamond Set</a></li>
                 <li><a href="">Men's Diamond set</a></li>
               </ul>
             </li>
-            <li><a href="#">Eternity Rings</a>
+            <li class="has-menu"><a href="#">Eternity Rings</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Claw set</a></li>
                 <li><a href="">Channel set</a></li>
                 <li><a href="">Designer set</a></li>
               </ul>
             </li>
-            <li><a href="#">Gifts</a>
+            <li class="has-menu"><a href="#">Gifts</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Birthday jewelry</a></li>
                 <li><a href="">Anniversary jewelry</a></li>
@@ -210,9 +223,9 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">Gemstones</a>
+        <li class="has-menu"><a href="#">Gemstones</a><input type="checkbox" /><span></span>
           <ul class="gemstones-submenu">
-            <li><a href="#">Birthstones</a>
+            <li class="has-menu"><a href="#">Birthstones</a><input type="checkbox" /><span></span>
               <ul class="birthstones-submenu-first">
                 <li><a href="#">JAN|garnet</a></li>
                 <li><a href="#">FEB|amethyst</a></li>
@@ -228,7 +241,7 @@
                 <li><a href="#">DEC|topaz</a></li>
               </ul>
             </li>
-            <li><a href="#">Gemstone gifts</a>
+            <li class="has-menu"><a href="#">Gemstone gifts</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="">Top Ideas</a></li>
                 <li><a href="">Jewelry</a></li>
@@ -239,9 +252,9 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">King of custom</a>
+        <li class="has-menu"><a href="#">King of custom</a><input type="checkbox" /><span></span>
           <ul class="custom-submenu">
-            <li><a href="#">Custom sets</a>
+            <li class="has-menu"><a href="#">Custom sets</a><input type="checkbox" /><span></span>
               <ul class="custom-submenu-first">
                 <li><a href="#">Virtual workshop</a></li>
                 <li><a href="#">Start with your design</a></li>
@@ -252,9 +265,9 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">Virtual Museum</a>
+        <li class="has-menu"><a href="#">Virtual Museum</a><input type="checkbox" /><span></span>
           <ul class="custom-submenu">
-            <li><a href="#">Education</a>
+            <li class="has-menu"><a href="#">Education</a><input type="checkbox" /><span></span>
               <ul class="virtual-museum-submenu-first">
                 <li><a href="#">Online Collections</a></li>
                 <li><a href="#">Worlds Famous collections</a></li>
@@ -265,7 +278,7 @@
                 <li><a href="#">The bright future</a></li>
               </ul>
             </li>
-            <li><a href="#">Cholograms</a>
+            <li class="has-menu"><a href="#">Cholograms</a><input type="checkbox" /><span></span>
               <ul>
                 <li><a href="#">About the project</a></li>
                 <li><a href="#">Make your prism</a></li>
@@ -317,7 +330,7 @@
               <h3>Diamond complects</h3><img src="images/carousels/complects.png" alt="">
             </li>
             <li class="carousel__item">
-              <h3>Precoius stones complects</h3><img src="images/carousels/gem-complects.png" alt="">
+              <h3>Precious stones complects</h3><img src="images/carousels/gem-complects.png" alt="">
             </li>
             <li class="carousel__item">
               <h3>Precious stones</h3><img src="images/carousels/gems.png" alt="">
@@ -554,7 +567,7 @@
     <section class="links">
       <ul>
         <li>
-          <a href="">Customer Information</a>
+          <span>Customer Information</span>
           <ul>
             <li><a href="">Delivery procedures</a></li>
             <li><a href="">Shipping terms</a></li>
@@ -564,7 +577,7 @@
           </ul>
         </li>
         <li>
-          <a href="">Ethical conduct</a>
+          <span>Ethical conduct</span>
           <ul>
             <li><a href="">Partners</a></li>
             <li><a href="">Certificates of source</a></li>
@@ -574,7 +587,7 @@
           </ul>
         </li>
         <li>
-          <a href="">Guides and tutorials</a>
+          <span>Guides and tutorials</span>
           <ul>
             <li><a href="">Ring size guide</a></li>
             <li><a href="">Price guide</a></li>
@@ -585,7 +598,7 @@
           </ul>
         </li>
         <li>
-          <a href="">About us</a>
+          <span>About us</span>
           <ul>
             <li><a href="">News</a></li>
             <li><a href="">Reviews</a></li>
