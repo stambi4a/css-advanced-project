@@ -511,7 +511,7 @@ header.home-header {
     grid-area: info-message;
     align-self: stretch;
     border-radius: 0.6rem;
-    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/king-of-diamondsimages/banners/blue-deal-of-the-month.png");
+    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/king-of-diamonds/images/banners/blue-deal-of-the-month.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -1021,7 +1021,7 @@ h1, h2, h3, h4, h5, h6 {
 main.home-main {
   padding: 0 1rem; }
   main.home-main section.week-offers {
-    background: url("/king-of-diamondsimages/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background: url("/king-of-diamonds/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
     height: 26rem; }
   main.home-main section.week-offers h1 {
@@ -1047,7 +1047,7 @@ main.home-main {
   main.home-main section.main-categories {
     margin: 2rem auto; }
   main.home-main section.jewelry-gifts {
-    background: url("/king-of-diamondsimages/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background: url("/king-of-diamonds/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
     background-size: cover;
     height: 26rem; }
   main.home-main section.jewelry-gifts .text-right {
@@ -3020,7 +3020,7 @@ main.auth-main {
   main.auth-main * {
     font-family: inherit; }
   main.auth-main section.auth {
-    background: url("/king-of-diamondsimages/backgrounds/auth-bg.jpg") no-repeat center center;
+    background: url("/king-of-diamonds/images/backgrounds/auth-bg.jpg") no-repeat center center;
     background-size: cover;
     padding: 5rem 0; }
     main.auth-main section.auth article.auth-container {
@@ -3266,7 +3266,7 @@ footer {
         vertical-align: middle;
         justify-content: center;
         align-items: center;
-        background: url("/king-of-diamondsimages/backgrounds/frame.png") no-repeat center center;
+        background: url("/king-of-diamonds/images/backgrounds/frame.png") no-repeat center center;
         background-size: cover; }
       footer section.social ul a i {
         font-size: 2rem;
