@@ -511,7 +511,7 @@ header.home-header {
     grid-area: info-message;
     align-self: stretch;
     border-radius: 0.6rem;
-    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/king-of-diamonds/images/banners/blue-deal-of-the-month.png");
+    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -1021,7 +1021,7 @@ h1, h2, h3, h4, h5, h6 {
 main.home-main {
   padding: 0 1rem; }
   main.home-main section.week-offers {
-    background: url("/king-of-diamonds/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
     height: 26rem; }
   main.home-main section.week-offers h1 {
@@ -1047,7 +1047,7 @@ main.home-main {
   main.home-main section.main-categories {
     margin: 2rem auto; }
   main.home-main section.jewelry-gifts {
-    background: url("/king-of-diamonds/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background: url("/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
     background-size: cover;
     height: 26rem; }
   main.home-main section.jewelry-gifts .text-right {
@@ -1300,7 +1300,7 @@ main.home-main {
  * @description: A Simple Carousel Pure CSS Using Sass
  * @version: 1.0.0
  */
-.main-categories .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .main-categories .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .main-categories .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .main-categories .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .main-categories .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .main-categories .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .main-categories .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .main-categories .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .main-categories .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .main-categories .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .main-categories .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .main-categories .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .main-categories .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .main-categories .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .main-categories .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .main-categories .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .main-categories .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .main-categories .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .main-categories .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .main-categories .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1), .special-collection .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .special-collection .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .special-collection .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .special-collection .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .special-collection .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .special-collection .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .special-collection .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .special-collection .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .special-collection .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .special-collection .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .special-collection .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .special-collection .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .special-collection .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .special-collection .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .special-collection .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .special-collection .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .special-collection .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .special-collection .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .special-collection .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .special-collection .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1) {
+.main-categories .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .main-categories .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .main-categories .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .main-categories .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .main-categories .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .main-categories .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .main-categories .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .main-categories .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .main-categories .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .main-categories .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .main-categories .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .main-categories .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .main-categories .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .main-categories .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .main-categories .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .main-categories .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .main-categories .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .main-categories .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .main-categories .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .main-categories .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1), .special-collection .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .special-collection .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .special-collection .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .special-collection .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .special-collection .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .special-collection .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .special-collection .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .special-collection .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .special-collection .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .special-collection .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .special-collection .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .special-collection .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .special-collection .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .special-collection .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .special-collection .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .special-collection .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .special-collection .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .special-collection .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .special-collection .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .special-collection .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1), .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(10), .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__next > label:nth-child(10), .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__prev > label:nth-child(9), .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__next > label:nth-child(1) {
   opacity: 1 !important;
   z-index: 3; }
 
@@ -1312,13 +1312,17 @@ main.home-main {
   margin-left: 0.95rem;
   width: calc(10% - 1.3rem); }
 
+.special-offers .carousel__item {
+  margin-left: 0.95rem;
+  width: calc(33% - 1.1rem); }
+
 .main-categories .carousel__item h3 {
   top: 1rem;
   left: 25%;
   width: 50%;
   color: white; }
 
-.special-collection .carousel__item h3 {
+.special-collection .carousel__item h3, .special-offers .carousel__item h3 {
   top: -1rem;
   left: 25%;
   width: 50%;
@@ -3014,13 +3018,352 @@ main.home-main {
       width: 20px;
       height: 20px; }
 
+.special-offers .carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .special-offers .carousel > input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 50%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: 0%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -33%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -66%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -99%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -132%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -165%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -198%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -231%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__nav > label:nth-child(8) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -264%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(9):checked ~ .carousel__nav > label:nth-child(9) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(6) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(7) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(8) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(9) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__items .carousel__item:nth-child(10) {
+      left: -297%; }
+    .special-offers .carousel > input[type="radio"]:nth-child(10):checked ~ .carousel__nav > label:nth-child(10) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+  .special-offers .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 300%;
+    height: auto;
+    position: relative; }
+  .special-offers .carousel__item {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    transition: all 1s;
+    -webkit-transition: all 1s; }
+    .special-offers .carousel__item img {
+      width: 100%;
+      vertical-align: middle;
+      transition: all 0.5s -0.45s; }
+    .special-offers .carousel__item h3 {
+      display: block;
+      position: absolute;
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 300; }
+    .special-offers .carousel__item a {
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: 30%;
+      color: purple;
+      display: none;
+      position: relative;
+      left: -2.5rem;
+      top: 1rem;
+      font-weight: 600; }
+  .special-offers .carousel__prev > label, .special-offers .carousel__next > label {
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    opacity: 1;
+    z-index: 2; }
+    .special-offers .carousel__prev > label:hover, .special-offers .carousel__prev > label:focus, .special-offers .carousel__next > label:hover, .special-offers .carousel__next > label:focus {
+      opacity: 1 !important; }
+    .special-offers .carousel__prev > label:before, .special-offers .carousel__prev > label:after, .special-offers .carousel__next > label:before, .special-offers .carousel__next > label:after {
+      content: "";
+      position: absolute;
+      width: inherit;
+      height: inherit; }
+    .special-offers .carousel__prev > label:before, .special-offers .carousel__next > label:before {
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+      width: 60%;
+      height: 60%;
+      top: 20%; }
+  .special-offers .carousel__prev > label {
+    left: 2%; }
+    .special-offers .carousel__prev > label:before {
+      left: 35%;
+      top: 20%;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg); }
+  .special-offers .carousel__next > label {
+    right: 2%; }
+    .special-offers .carousel__next > label:before {
+      left: 10%;
+      transform: rotate(315deg);
+      -webkit-transform: rotate(315deg); }
+  .special-offers .carousel__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3; }
+    .special-offers .carousel__nav > label {
+      border: 1px solid #fff;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 .125%;
+      width: 20px;
+      height: 20px; }
+
 main.auth-main {
   font-family: "Montserrat";
   padding: 1rem; }
   main.auth-main * {
     font-family: inherit; }
   main.auth-main section.auth {
-    background: url("/king-of-diamonds/images/backgrounds/auth-bg.jpg") no-repeat center center;
+    background: url("/images/backgrounds/auth-bg.jpg") no-repeat center center;
     background-size: cover;
     padding: 5rem 0; }
     main.auth-main section.auth article.auth-container {
@@ -3266,7 +3609,7 @@ footer {
         vertical-align: middle;
         justify-content: center;
         align-items: center;
-        background: url("/king-of-diamonds/images/backgrounds/frame.png") no-repeat center center;
+        background: url("/images/backgrounds/frame.png") no-repeat center center;
         background-size: cover; }
       footer section.social ul a i {
         font-size: 2rem;
