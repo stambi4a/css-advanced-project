@@ -1,0 +1,395 @@
+main.home-main{
+  // margin-top: 1rem;
+  padding: 0 1rem;
+  section.week-offers {
+    background: url($base+"images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background-size: cover;
+    height: 26rem;
+  }
+  
+  section.week-offers h1 {
+    padding: 1.5rem 0 0 5rem;
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+  
+  section.week-offers h1 span {
+    color: $weekCol;
+  }
+  
+  section.week-offers h1.week-offer-rabat {
+    padding-top: 0;
+  }
+  
+  section.week-offers h3 {
+    padding: 1.5rem 0 0 5rem;
+    font-weight: lighter;
+    width: 25%;
+    font-family: $headFont;
+  }
+  
+  section.week-offers a {
+    display: block;
+    padding: 1.2rem 0 0 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    // font-family:$headFont;
+    color: $headCol;
+    text-transform: uppercase;
+  }
+  
+  section.main-categories {
+    margin:2rem auto;
+  }
+  
+  section.jewelry-gifts {
+    background: url($base+"images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background-size: cover;
+    height: 26rem;
+  }
+  
+  section.jewelry-gifts .text-right {
+    position: absolute;
+    right: 5rem;
+    text-align: right;
+  }
+  
+  section.jewelry-gifts h1 {
+    padding: 1.5rem 0 0 5rem;
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+  
+  section.jewelry-gifts h1.week-offer-rabat {
+    padding-top: 0;
+  }
+  
+  section.jewelry-gifts a {
+    display: block;
+    padding: 1.2rem 0 0 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    // font-family:$headFont;
+    color: $headCol;
+    text-transform: uppercase;
+  }
+  
+  section.special-collection {
+    margin-top: 2rem;
+  }
+  
+  section.special-collection>h2,
+  section.special-collection>h3 {
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  
+  section.special-collection>h2 {
+    font-size: 2.4rem;
+  }
+  
+  section.special-collection>h3 {
+    font-size: 2rem;
+  }
+  
+  section.clients>h2,
+  section.clients>h3 {
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  
+  section.clients>h2 {
+    font-size: 2.4rem;
+  }
+  
+  section.clients>h3 {
+    font-size: 2rem;
+  }
+  
+  section.clients article {
+    display: flex;
+    margin: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: $boxShadow;
+  }
+  
+  section.clients article figure {
+    width: 35%;
+  }
+  
+  section.clients article figure img {
+    border-radius: 0.3rem;
+    width: 80%;
+    min-width: 300px;
+    margin: 2rem 0;
+    display: block;
+    margin: 2rem auto;
+  }
+  
+  section.clients article:nth-of-type(2) figure img {
+    // margin-left: -2rem;
+  }
+  
+  section.clients article blockquote {
+    width: 45%;
+    border: none;
+    color: $quotCol;
+    margin: 0 2rem;
+  }
+  
+  section.clients article blockquote p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  section.clients article blockquote h4 {
+    margin-top: 0.8rem;
+    text-align: right;
+    color: $quotCol;
+    font-weight: 600;
+    font-family: $mainFont, sans-serif;
+    letter-spacing: 0;
+  }
+  
+  section.clients article:nth-of-type(2) blockquote h4 {
+    text-align: left;
+  }
+  
+  section.clients article:nth-of-type(3) figure,
+  section.clients article:nth-of-type(3) blockquote {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  section.build-your-own {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  section.build-your-own div.build-your-own-choices h2 {
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+  }
+  
+  section.build-your-own div.build-your-own-choices .choice {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  section.build-your-own div.build-your-own-choices .choice a {
+    border: $borBut;
+    margin: 2rem;
+    border-radius: 0.6rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 20rem;
+  }
+  
+  section.build-your-own div.build-your-own-choices .choice a:hover {
+    background: $butCol;
+    color: $white;
+  }
+  
+  section.build-your-own div.build-your-own-choices .ask-for-advice {
+    margin-left: 2rem;
+  }
+  
+  section.build-your-own div.build-your-own-choices .ask-for-advice p {
+    display: block;
+    font-size: $fontHead;
+  }
+  
+  section.build-your-own div.build-your-own-choices .ask-for-advice a {
+    display: inline-block;
+    color: $butCol;
+    padding-top: 0.6rem;
+    font-size: $fontHead;
+  }
+  
+  section.build-your-own div.build-your-own-choices .ask-for-advice a i {
+    padding: 0 0.2rem;
+    font-size: $fontHead;
+  }
+  
+  section.build-your-own div.build-your-own-choices .ask-for-advice span {
+    color: $bigCol;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  @mixin h3width($items) {
+    @for $i from 1 through $items {
+      &:nth-child(#{$i}):checked ~ .carousel__items .carousel__item{
+        h3 {
+          width:100%;
+          left:0;
+        }
+        a {
+          left:0;
+          margin-left:0;
+        }
+      }
+    }
+  }
+  main.home-main {
+    section.week-offers {
+      background-position-x:right;
+      background-position-y:bottom;
+      h1 {
+        font-size:2.5rem;
+        padding:1rem 0 0 3rem;
+      }
+      a {
+        font-size:1rem;
+      }
+    }
+    section.jewelry-gifts {
+      background-position-x:left;
+      background-position-y:bottom;
+      h1 {
+        font-size:2.5rem;
+        padding:1rem 0 0 3rem;
+      }
+      a {
+        font-size:1rem;
+      }
+    }
+    section.special-collection .carousel > input[type="radio"]{
+      @include h3width(8); 
+    }
+    section.clients {
+      article {
+        margin:0;
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px) {
+  main.home-main {
+    section.week-offers, section.jewelry-gifts {
+      h1 {
+        font-size:1.8rem;
+        padding:1rem 0 0 3rem;
+      }
+      a {
+        font-size:1rem;
+      }
+    }
+    section.clients {
+      article, article:nth-of-type(3) {
+        flex-direction:column;
+        figure {
+          width:80%;
+          img {
+            width:100%;
+          }
+        }
+        blockquote {
+          order:2;
+          width:80%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:640px) {
+  main.home-main {
+    section.week-offers, section.jewelry-gifts {
+      height:21rem;
+      h1 {
+        font-size:1.4rem;
+      }
+    }
+    section.main-categories {
+      .carousel__item {
+        h3 {
+          font-size:1rem;
+          width:80%;
+          left:10%;
+        }
+      }
+    }
+    section.special-collection {
+      display:none;
+    }
+    section.clients {
+      article, article:nth-of-type(3) {
+        flex-direction:column;
+        figure {
+          width:95%;
+          img {
+            width:100%;
+          }
+        }
+        blockquote {
+          width:95%;
+        }
+      }
+    }
+    section.build-your-own {
+      figure {
+        img {
+          display:block;
+          width:100%;
+        }
+      }
+      div.build-your-own-choices {
+        .choice {
+          a {
+            width:70%;
+            margin:1rem;
+          }
+          img {
+            width:20%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:480px) {
+  main.home-main {
+    section.clients {
+      article {
+        figure {
+          img {
+            min-width:100px;
+          }
+        }
+      }
+    }
+    section.build-your-own {
+      div.build-your-own-choices {
+        div.choice {
+          a {
+            width:90%;
+          }
+          img {
+            width:40%;
+            margin:0 auto;
+          }
+          margin-bottom:1rem;
+        }
+        div.ask-for-advice {
+          p,span,a{
+            font-size:0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+}

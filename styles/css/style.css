@@ -19,6 +19,32 @@ option {
   color: #3d0070;
   background: none; }
 
+main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a, main.main-all-diamonds section.collection-peeks ul li article a:last-of-type {
+  width: 120px;
+  margin: 0 auto;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #4b8ffc;
+  color: #4b8ffc;
+  font-weight: 650;
+  text-align: center; }
+  main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a:hover, main.main-all-diamonds section.collection-peeks ul li article a:hover:last-of-type {
+    color: white;
+    background: #4b8ffc; }
+
+main.main-all-diamonds section.diamonds-buying-guide a {
+  width: 150px;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #4b8ffc;
+  border-color: white;
+  color: white;
+  font-weight: 650;
+  text-align: center; }
+  main.main-all-diamonds section.diamonds-buying-guide a:hover {
+    color: white;
+    background: rgba(190, 54, 54, 0.1); }
+
 header.home-header nav.main-nav > ul.main-menu > li:hover > a, header.home-header nav.main-nav > ul.main-menu > li > ul > li > a:hover, header.home-header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover {
   border-radius: 0.2rem;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3); }
@@ -431,6 +457,10 @@ table tr:hover td {
 hr {
   margin: 1rem 0; }
 
+figure {
+  margin: 0;
+  padding: 0; }
+
 footer section.featured ul li h6, footer section.subscribe h6, footer section.subscribe a {
   text-align: center;
   font-family: "Montserrat";
@@ -444,6 +474,32 @@ option {
   outline: none;
   color: #3d0070;
   background: none; }
+
+main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a, main.main-all-diamonds section.collection-peeks ul li article a:last-of-type {
+  width: 120px;
+  margin: 0 auto;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #4b8ffc;
+  color: #4b8ffc;
+  font-weight: 650;
+  text-align: center; }
+  main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a:hover, main.main-all-diamonds section.collection-peeks ul li article a:hover:last-of-type {
+    color: white;
+    background: #4b8ffc; }
+
+main.main-all-diamonds section.diamonds-buying-guide a {
+  width: 150px;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #4b8ffc;
+  border-color: white;
+  color: white;
+  font-weight: 650;
+  text-align: center; }
+  main.main-all-diamonds section.diamonds-buying-guide a:hover {
+    color: white;
+    background: rgba(190, 54, 54, 0.1); }
 
 header.home-header nav.main-nav > ul.main-menu > li:hover > a, header.home-header nav.main-nav > ul.main-menu > li > ul > li > a:hover, header.home-header nav.main-nav > ul.main-menu > li > ul > li > ul > li:hover {
   border-radius: 0.2rem;
@@ -740,7 +796,8 @@ header.home-header {
     grid-area: main-nav;
     align-self: start;
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    z-index: 1; }
   header.home-header nav.main-nav a {
     color: #260050;
     font-size: 0.9rem; }
@@ -1094,7 +1151,7 @@ main.home-main {
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(99, 1, 60, 0.1); }
+    box-shadow: 0rem 0rem 0.15rem 0.3rem rgba(99, 1, 60, 0.1); }
   main.home-main section.clients article figure {
     width: 35%; }
   main.home-main section.clients article figure img {
@@ -1313,8 +1370,8 @@ main.home-main {
   width: calc(10% - 1.3rem); }
 
 .special-offers .carousel__item {
-  margin-left: 0.95rem;
-  width: calc(33% - 1.1rem); }
+  margin-left: -0.5rem;
+  width: calc(33% + 0.3rem); }
 
 .main-categories .carousel__item h3 {
   top: 1rem;
@@ -1614,7 +1671,7 @@ main.home-main {
       text-align: center;
       text-transform: capitalize;
       font-weight: 300; }
-    .main-categories .carousel__item a {
+    .main-categories .carousel__item a.buy-link {
       text-transform: uppercase;
       text-align: center;
       margin-left: 30%;
@@ -2953,7 +3010,7 @@ main.home-main {
       text-align: center;
       text-transform: capitalize;
       font-weight: 300; }
-    .special-collection .carousel__item a {
+    .special-collection .carousel__item a.buy-link {
       text-transform: uppercase;
       text-align: center;
       margin-left: 30%;
@@ -3292,7 +3349,7 @@ main.home-main {
       text-align: center;
       text-transform: capitalize;
       font-weight: 300; }
-    .special-offers .carousel__item a {
+    .special-offers .carousel__item a.buy-link {
       text-transform: uppercase;
       text-align: center;
       margin-left: 30%;
@@ -3725,3 +3782,187 @@ footer {
   body {
     width: 80%;
     margin: 0 auto; } }
+
+main.main-all-diamonds section {
+  padding: 0 1rem; }
+
+main.main-all-diamonds section.special-offers .container {
+  margin: 0 auto;
+  width: 100%; }
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item {
+    top: -2rem; }
+    main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-left {
+      position: absolute;
+      top: 20%;
+      left: 3rem;
+      width: 35%; }
+    main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-right {
+      position: absolute;
+      top: 20%;
+      left: 65%;
+      width: 35%; }
+    main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item h3 {
+      position: static;
+      color: white;
+      font-size: 2.1rem;
+      font-weight: 100;
+      width: 100%;
+      text-align: left; }
+    main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item a {
+      display: inline-block;
+      margin-top: 1.6rem;
+      font-size: 1.5rem;
+      color: white; }
+  main.main-all-diamonds section.special-offers .container .carousel div.carousel__nav {
+    bottom: 10%; }
+
+main.main-all-diamonds section.diamond-types article.diamond-type {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; }
+  main.main-all-diamonds section.diamond-types article.diamond-type figure {
+    margin: 0;
+    width: 50%; }
+    main.main-all-diamonds section.diamond-types article.diamond-type figure img {
+      display: block;
+      width: 100%;
+      margin: 0 auto; }
+  main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 4px 0px rgba(75, 143, 252, 0.4);
+    width: 50%; }
+    main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop h2 {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 100; }
+    main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop p {
+      width: 90%;
+      margin: 0 auto;
+      color: #3d0070;
+      line-height: 1.6;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 550; }
+    main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a {
+      text-align: center;
+      display: block;
+      text-transform: uppercase; }
+  main.main-all-diamonds section.diamond-types article.diamond-type:nth-child(odd) figure {
+    order: 1; }
+
+main.main-all-diamonds section.collection-peeks ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-flow: row wrap; }
+  main.main-all-diamonds section.collection-peeks ul li {
+    display: inline-block;
+    width: 24%;
+    margin: 1rem 0; }
+    main.main-all-diamonds section.collection-peeks ul li article {
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: column; }
+      main.main-all-diamonds section.collection-peeks ul li article * {
+        font-family: "Montserrat"; }
+      main.main-all-diamonds section.collection-peeks ul li article h4 {
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        font-weight: 100; }
+      main.main-all-diamonds section.collection-peeks ul li article p {
+        color: #3d0070;
+        opacity: 0.75; }
+      main.main-all-diamonds section.collection-peeks ul li article a {
+        text-transform: uppercase;
+        display: inline-block; }
+        main.main-all-diamonds section.collection-peeks ul li article a:first-of-type img {
+          display: block;
+          width: 100%; }
+        main.main-all-diamonds section.collection-peeks ul li article a:first-of-type:hover {
+          box-shadow: 0rem 0rem 0.15rem 0.3rem rgba(99, 1, 60, 0.1); }
+        main.main-all-diamonds section.collection-peeks ul li article a:last-of-type {
+          color: #4b8ffc;
+          padding: 0.4rem 0.2rem;
+          margin-top: 1rem; }
+
+main.main-all-diamonds section.diamonds-buying-guide {
+  background: url("/images/backgrounds/diamond-guide.jpg") no-repeat center center;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 0 1rem; }
+  main.main-all-diamonds section.diamonds-buying-guide * {
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    width: 25%;
+    color: white; }
+  main.main-all-diamonds section.diamonds-buying-guide h2 {
+    font-family: "Montserrat"; }
+  main.main-all-diamonds section.diamonds-buying-guide a {
+    text-transform: uppercase; }
+
+@media only screen and (max-width: 1024px) {
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item h3 {
+    font-size: 1.6rem; }
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item a {
+    font-size: 1.2rem; }
+  main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop h2 {
+    font-size: 1.6rem; }
+  main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop p {
+    line-height: initial; } }
+
+@media only screen and (max-width: 768px) {
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item a {
+    margin-top: 0.3rem; }
+  main.main-all-diamonds section.diamond-types article.diamond-type {
+    flex-direction: column; }
+    main.main-all-diamonds section.diamond-types article.diamond-type figure {
+      width: 100%; }
+    main.main-all-diamonds section.diamond-types article.diamond-type:nth-child(odd) figure {
+      order: 0; }
+    main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop {
+      width: 100%; }
+      main.main-all-diamonds section.diamond-types article.diamond-type div.diamond-types-shop a {
+        margin-top: 0.8rem; }
+  main.main-all-diamonds section.collection-peeks ul li {
+    width: 28%; }
+  main.main-all-diamonds section.diamonds-buying-guide * {
+    width: 50%; }
+  main.main-all-diamonds section.diamonds-buying-guide h2 {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 640px) {
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-left {
+    width: 80%; }
+  main.main-all-diamonds section.special-offers .container .carousel div.carousel__nav {
+    bottom: 15%; }
+  main.main-all-diamonds section.collection-peeks ul li {
+    width: 40%; } }
+
+@media only screen and (max-width: 480px) {
+  main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-left {
+    width: 90%; }
+    main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-left h3, main.main-all-diamonds section.special-offers .container .carousel .carousel__items .carousel__item div.offers-left a {
+      font-size: 100%; }
+  main.main-all-diamonds section.collection-peeks ul li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem; } }
+
+@media only screen and (max-width: 320px) {
+  main.main-all-diamonds section.diamonds-buying-guide * {
+    width: 80%;
+    margin: 0 auto;
+    position: static; } }
