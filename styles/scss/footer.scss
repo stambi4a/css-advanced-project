@@ -45,27 +45,32 @@ footer {
       display:flex;
       flex-flow:row wrap;
       justify-content: center;
-      input {
-        padding:0.6rem 2rem;
-      }
-      & [type="text"] {
-        width:35%;
-        margin-right:0.7rem;
-        color:$headCol;
-        &::placeholder {
-          color:$headCol;
+    }
+    form {
+      div {
+        input {
+          padding:0.6rem 2rem;
         }
-      }
-      & [type="submit"] {
-        width:20%;
-        margin-right:0.7rem;
-        font-weight:600;
-        &:hover {
-          background:$headCol;
-          color:white;
+        & [type="text"] {
+          width:35%;
+          margin-right:0.7rem;
+          color:$headCol;
+          &::placeholder {
+            color:$headCol;
+          }
+        }
+        & [type="submit"] {
+          width:20%;
+          margin-right:0.7rem;
+          font-weight:600;
+          &:hover {
+            background:$headCol;
+            color:white;
+          }
         }
       }
     }
+
     h6,a {
       @extend %smallHead;
       display:inline-block;

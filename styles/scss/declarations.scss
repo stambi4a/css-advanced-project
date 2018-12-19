@@ -17,10 +17,13 @@ $boxColLi:rgba(75, 143, 252, 0.4);
 $white:rgb(255, 255, 255);
 $weekCol:rgb(30, 1, 20);
 $quotCol:rgb(121, 0, 255);
+$spBorLight:rgb(236, 179, 255);
 $footCol:rgb(251, 244, 255);
 $specCol:rgba(240, 220, 240, 0.6);
 $liCol:rgb(178, 209, 255);
 $transCol:rgba(190, 54, 54, 0.1);
+$selCol:rgb(217, 180, 230);
+$headColOp:rgba(61, 0, 112, 0.7);
 $borLink:1px solid $linkBorCol;
 $borLight:1px solid $bigBorCol;
 $borDark:1px solid $headCol;
@@ -38,8 +41,14 @@ $fontBig:1.6rem;
 $fontMiddle:1.6rem;
 $fontHead:1.2rem;
 $fontArt:2rem;
-$boxShadow:0.1rem 0.1rem 0.2rem 0.2rem $boxCol;
-$boxShadow:0rem 0rem 0.15rem 0.3rem $boxCol;
+$butBoxSh: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
+$softBoxSh:0.1rem 0.1rem 0.2rem 0.2rem $boxCol;
+$imBoxSh:0rem 0rem 0.2rem 0.15rem $boxCol;
+$linkBoxSh:-0.1rem 0.1rem 0rem 0rem $boxCol;
+$ind:number;
+$rgbRed:255;
+$rgbGreen:255;
+$rgbBlue:255;
 %smallHead {
   text-align:center;
   font-family:$mainFont;
@@ -78,6 +87,17 @@ $boxShadow:0rem 0rem 0.15rem 0.3rem $boxCol;
   &:hover {
     color:white;
     background:$transCol;
+  }
+}
+%buttonShopSm {
+  border-radius:0.1rem;
+  border:$borDark;
+  color:$headCol;
+  font-weight:650;
+  text-align:center;
+  &:hover {
+    color:white;
+    background:$headCol;
   }
 }
 %linkHover {

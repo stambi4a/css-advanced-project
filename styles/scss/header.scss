@@ -286,6 +286,7 @@ header.home-header{
     font-family: FontAwesome;
   }
   div.search input[type="text"]::placeholder {
+    opacity:1;
     text-align: right;
     color: $headCol;
     padding: 0 0.5rem 0 0;
