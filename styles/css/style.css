@@ -3576,11 +3576,11 @@ header.home-header {
     width: auto;
     width: 100px; }
   header.home-header .info-message {
-    height: 50px;/king-of-diamonds/images/
+    height: 50px;
     grid-area: info-message;
     align-self: stretch;
     border-radius: 0.6rem;
-    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/images/banners/blue-deal-of-the-month.png");
+    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.1) 0%, rgba(136, 252, 252, 0) 100%), url("/king-of-diamonds/images/banners/blue-deal-of-the-month.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -4075,7 +4075,7 @@ header.home-header {
       text-align: center; }
       header.home-header ul.auth li span {
         display: none; }
-    header.home-heade/king-of-diamonds/images/h li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
+    header.home-header li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
       font-size: 1.7rem; }
     header.home-header ul.user {
       text-align: center; }
@@ -4099,9 +4099,9 @@ header.home-header {
 main.home-main {
   padding: 0 1rem; }
   main.home-main section.week-offers {
-    background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background: url("/king-of-diamonds/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
-    height: 26rem; }/king-of-diamonds/images/
+    height: 26rem; }
   main.home-main section.week-offers h1 {
     padding: 1.5rem 0 0 5rem;
     font-weight: lighter;
@@ -4125,7 +4125,7 @@ main.home-main {
   main.home-main section.main-categories {
     margin: 2rem auto; }
   main.home-main section.jewelry-gifts {
-    background: url("/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background: url("/king-of-diamonds/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
     background-size: cover;
     height: 26rem; }
   main.home-main section.jewelry-gifts .text-right {
@@ -4353,7 +4353,7 @@ main.home-main {
     display: block;
     width: 100%; }
   main.home-main section.build-your-own div.build-your-own-choices .choice a {
-    width: 70%;/king-of-diamonds/images/
+    width: 70%;
     margin: 1rem; }
   main.home-main section.build-your-own div.build-your-own-choices .choice img {
     width: 20%; } }
@@ -4377,7 +4377,7 @@ main.auth-main {
   main.auth-main * {
     font-family: inherit; }
   main.auth-main section.auth {
-    background: url("/images/backgrounds/auth-bg.jpg") no-repeat center center;
+    background: url("/king-of-diamonds/images/backgrounds/auth-bg.jpg") no-repeat center center;
     background-size: cover;
     padding: 5rem 0; }
     main.auth-main section.auth article.auth-container {
@@ -4599,7 +4599,7 @@ footer {
           text-decoration: underline;
           display: block;
           margin-bottom: 0.5rem;
-          font-weight: 80/king-of-diamonds/images/
+          font-weight: 80; }
         footer section.links > ul > li > ul > li {
           display: block; }
   footer section.social {
@@ -4623,7 +4623,7 @@ footer {
         vertical-align: middle;
         justify-content: center;
         align-items: center;
-        background: url("/images/backgrounds/frame.png") no-repeat center center;
+        background: url("/king-of-diamonds/images/backgrounds/frame.png") no-repeat center center;
         background-size: cover; }
       footer section.social ul a i {
         font-size: 2rem;
@@ -4827,7 +4827,7 @@ main.main-diamonds section.collection-peeks ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-flow: co/king-of-diamonds/images/
+      flex-flow:row wrap;}
       main.main-diamonds section.collection-peeks ul li article * {
         font-family: "Montserrat"; }
       main.main-diamonds section.collection-peeks ul li article h4 {
@@ -4851,7 +4851,7 @@ main.main-diamonds section.collection-peeks ul {
           margin-top: 1rem; }
 
 main.main-diamonds section.diamonds-buying-guide {
-  background: url("/images/backgrounds/diamond-guide.jpg") no-repeat center center;
+  background: url("/king-of-diamonds/images/backgrounds/diamond-guide.jpg") no-repeat center center;
   background-size: cover;
   height: 350px;
   display: flex;
