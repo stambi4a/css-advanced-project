@@ -4075,7 +4075,7 @@ header.home-header {
       text-align: center; }
       header.home-header ul.auth li span {
         display: none; }
-    header.home-header li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
+    header.home-header ul.auth li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
       font-size: 1.7rem; }
     header.home-header ul.user {
       text-align: center; }
@@ -4599,7 +4599,7 @@ footer {
           text-decoration: underline;
           display: block;
           margin-bottom: 0.5rem;
-          font-weight: 80; }
+          font-weight: 800; }
         footer section.links > ul > li > ul > li {
           display: block; }
   footer section.social {
@@ -4827,7 +4827,7 @@ main.main-diamonds section.collection-peeks ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-flow:row wrap;}
+      flex-flow: column; }
       main.main-diamonds section.collection-peeks ul li article * {
         font-family: "Montserrat"; }
       main.main-diamonds section.collection-peeks ul li article h4 {
