@@ -2712,7 +2712,7 @@ header.home-header nav.main-nav > ul.main-menu > li:hover > a, header.home-heade
     cursor: not-allowed; }
 
 .icon-action-white {
-  background-image: url("/images/sprites/sprite-action-white-and-purple.png"); }
+  background-image: url("/king-of-diamonds/images/sprites/sprite-action-white-and-purple.png"); }
 
 .icon-action-white-ic_perm_identity_white_24dp {
   background-position: -5px -5px;
@@ -3550,7 +3550,11 @@ header.home-header {
   grid-row-gap: 1rem;
   grid-template-columns: 10% 11% 10% 19% 19% 10% 11% 10%;
   grid-template-rows: 30px 30px 40px 20px 2px;
-  grid-template-areas: "logo logo info-message info-message info-message info-message auth auth" "logo logo info-message info-message info-message info-message personal personal" "search search offers offers offers offers user user" "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr hr hr hr"; }
+  grid-template-areas: "logo logo info-message info-message info-message info-message auth auth"
+ "logo logo info-message info-message info-message info-message personal personal"
+ "search search offers offers offers offers user user"
+ "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav"
+ "hr hr hr hr hr hr hr hr"; }
   header.home-header * {
     text-align: center; }
   header.home-header hr {
@@ -3572,7 +3576,7 @@ header.home-header {
     width: auto;
     width: 100px; }
   header.home-header .info-message {
-    height: 50px;
+    height: 50px;/king-of-diamonds/images/
     grid-area: info-message;
     align-self: stretch;
     border-radius: 0.6rem;
@@ -3883,7 +3887,12 @@ header.home-header {
     display: none; }
   header.home-header {
     grid-template-rows: 40px 30px 30px 40px 40px 2px;
-    grid-template-areas: "info-message info-message info-message info-message info-message info-message info-message info-message" "logo logo auth auth auth personal personal personal" "logo logo search search search user user user" "offers offers offers offers offers offers offers offers" "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav" "hr hr hr hr hr hr hr hr"; }
+    grid-template-areas: "info-message info-message info-message info-message info-message info-message info-message info-message"
+ "logo logo auth auth auth personal personal personal"
+ "logo logo search search search user user user"
+ "offers offers offers offers offers offers offers offers"
+ "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav"
+ "hr hr hr hr hr hr hr hr"; }
     header.home-header ul.user {
       text-align: right;
       margin-bottom: 6px; }
@@ -3981,7 +3990,12 @@ header.home-header {
 @media only screen and (max-width: 640px) {
   header.home-header {
     grid-template-rows: 25px 25px 25px 25px 40px 40px;
-    grid-template-areas: "logo logo logo logo auth auth auth auth" "logo logo logo logo . personal personal personal" "logo logo logo logo user user user user" "search search search search search search search search" "offers offers offers offers offers offers offers offers" "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
+    grid-template-areas: "logo logo logo logo auth auth auth auth"
+ "logo logo logo logo . personal personal personal"
+ "logo logo logo logo user user user user"
+ "search search search search search search search search"
+ "offers offers offers offers offers offers offers offers"
+ "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
     margin: 0 auto; }
     header.home-header ul.offers li {
       width: 20%; }
@@ -4002,7 +4016,12 @@ header.home-header {
   header.home-header {
     grid-row-gap: 1rem;
     grid-template-rows: 100px 30px 30px 30px 30px 40px;
-    grid-template-areas: "logo logo logo logo logo logo logo logo" "auth auth auth auth auth auth auth auth" ". personal personal personal personal personal personal ." ". user user user user user user ." ". search search search search search search ." "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
+    grid-template-areas: "logo logo logo logo logo logo logo logo"
+ "auth auth auth auth auth auth auth auth"
+ ". personal personal personal personal personal personal ."
+ ". user user user user user user ."
+ ". search search search search search search ."
+ "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
     margin: 0 auto; }
     header.home-header .logo {
       margin: 0 auto; }
@@ -4041,7 +4060,12 @@ header.home-header {
   header.home-header {
     grid-row-gap: 1rem;
     grid-template-rows: 100px 30px 50px 30px 30px 40px;
-    grid-template-areas: "logo logo logo logo logo logo logo logo" "auth auth auth auth auth auth auth auth" "personal personal personal personal personal personal personal personal" "user user user user user user user user" "search search search search search search search search" "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
+    grid-template-areas: "logo logo logo logo logo logo logo logo"
+ "auth auth auth auth auth auth auth auth"
+ "personal personal personal personal personal personal personal personal"
+ "user user user user user user user user"
+ "search search search search search search search search"
+ "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav";
     margin: 0 auto; }
     header.home-header .logo {
       margin: 0 auto; }
@@ -4051,7 +4075,7 @@ header.home-header {
       text-align: center; }
       header.home-header ul.auth li span {
         display: none; }
-    header.home-header ul.auth li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
+    header.home-heade/king-of-diamonds/images/h li a i, header.home-header ul.auth li span, header.home-header ul.auth li a {
       font-size: 1.7rem; }
     header.home-header ul.user {
       text-align: center; }
@@ -4077,7 +4101,7 @@ main.home-main {
   main.home-main section.week-offers {
     background: url("/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
-    height: 26rem; }
+    height: 26rem; }/king-of-diamonds/images/
   main.home-main section.week-offers h1 {
     padding: 1.5rem 0 0 5rem;
     font-weight: lighter;
@@ -4329,7 +4353,7 @@ main.home-main {
     display: block;
     width: 100%; }
   main.home-main section.build-your-own div.build-your-own-choices .choice a {
-    width: 70%;
+    width: 70%;/king-of-diamonds/images/
     margin: 1rem; }
   main.home-main section.build-your-own div.build-your-own-choices .choice img {
     width: 20%; } }
@@ -4575,7 +4599,7 @@ footer {
           text-decoration: underline;
           display: block;
           margin-bottom: 0.5rem;
-          font-weight: 800; }
+          font-weight: 80/king-of-diamonds/images/
         footer section.links > ul > li > ul > li {
           display: block; }
   footer section.social {
@@ -4803,7 +4827,7 @@ main.main-diamonds section.collection-peeks ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-flow: column; }
+      flex-flow: co/king-of-diamonds/images/
       main.main-diamonds section.collection-peeks ul li article * {
         font-family: "Montserrat"; }
       main.main-diamonds section.collection-peeks ul li article h4 {
