@@ -1,0 +1,504 @@
+---
+layout: default
+title: King of Diamonds
+permalink: /shop/all-diamonds/
+---
+<main class="main-all-diamonds">
+  <aside>
+    <input type="checkbox" class="toggle-filters open-filters">
+    <!-- <input type="checkbox" class="toggle-filters close-filters">
+    <input type="checkbox" class="toggle-filters open-filters">
+    <input type="checkbox" class="toggle-filters close-filters"> -->
+    <section class="filters">
+      <article class="filter-results">
+        <h3>Results:</h3><a href="#"> <i class="fa fa-caret-right" aria-hidden="true"></i> Clear Results</a>
+      </article>
+      <article class="filter-price">
+        <h3>Weight</h3>
+        <label class="range-holder">
+          <span>0.25Ca</span>
+          <input type="range" name="" min="100" max="100000" value="100" step="1" id="price-range">
+          <span>52Ca</span>
+        </label>
+      </article>
+      <article class="filter-weight">
+        <h3>Price</h3>
+        <label class="range-holder">
+          <span>100$</span>
+          <input type="range" name="" min="0.25" max="52" value="0.25" step="0.1" id="weight-range">
+          <span>100000$</span>
+        </label>
+      </article>
+      <article class="filter-shapes">
+        <h3>Shape</h3>
+        <ul>
+          <li><label for="emerald-shape"><input type="checkbox" name="shape" id="emerald-shape"><img src="images/shapes/emerald-shape.png"
+                alt=""><img src="images/shapes/emerald-shape-hover.png" alt="">
+              <p>Emerald</p>
+            </label></li>
+          <li><label for="asscher-shape"><input type="checkbox" name="shape" id="asscher-shape"><img src="images/shapes/asscher-shape.png"
+                alt=""><img src="images/shapes/asscher-shape-hover.png" alt="">
+              <p>Asscher</p>
+            </label></li>
+          <li><label for="oval-shape"><input type="checkbox" name="shape" id="oval-shape"><img src="images/shapes/oval-shape.png"
+                alt=""><img src="images/shapes/oval-shape-hover.png" alt="">
+              <p>Oval</p>
+            </label></li>
+          <li><label for="pear-shape"><input type="checkbox" name="shape" id="pear-shape"><img src="images/shapes/pear-shape.png"
+                alt=""><img src="images/shapes/pear-shape-hover.png" alt="">
+              <p>Pear</p>
+            </label></li>
+          <li><label for="marquise-shape"><input type="checkbox" name="shape" id="marquise-shape"><img src="images/shapes/marquise-shape.png"
+                alt=""><img src="images/shapes/marquise-shape-hover.png" alt="">
+              <p>Marquise</p>
+            </label></li>
+          <li><label for="round-shape"><input type="checkbox" name="shape" id="round-shape"><img src="images/shapes/round-shape.png"
+                alt=""><img src="images/shapes/round-shape-hover.png" alt="">
+              <p>Round</p>
+            </label></li>
+          <li><label for="princess-shape"><input type="checkbox" name="shape" id="princess-shape"><img src="images/shapes/princess-shape.png"
+                alt=""><img src="images/shapes/princess-shape-hover.png" alt="">
+              <p>Princess</p>
+            </label></li>
+          <li><label for="heart-shape"><input type="checkbox" name="shape" id="heart-shape"><img src="images/shapes/heart-shape.png"
+                alt=""><img src="images/shapes/heart-shape-hover.png" alt="">
+              <p>Heart</p>
+            </label></li>
+          <li><label for="cushion-shape"><input type="checkbox" name="shape" id="cushion-shape"><img src="images/shapes/cushion-shape.png"
+                alt=""><img src="images/shapes/cushion-shape-hover.png" alt="">
+              <p>Cushion</p>
+            </label></li>
+          <li><label for="radiant-shape"><input type="checkbox" name="shape" id="radiant-shape"><img src="images/shapes/radiant-shape.png"
+                alt=""><img src="images/shapes/radiant-shape-hover.png" alt="">
+              <p>Radiant</p>
+            </label></li>
+        </ul>
+      </article>
+      <article class="filter-clarity">
+        <h3>Clarity </h3>
+        <div class="range-slider">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="compartments">
+          <li>
+            <input type="radio" checked name="clarity" id="SI2">
+            <label for="SI2">
+              <span>SI2</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="SI1">
+            <label for="SI1">
+              <span>SI1</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="VS2">
+            <label for="VS2">
+              <span>VS2</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="VS1">
+            <label for="VS1">
+              <span>VS1</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="VVS2">
+            <label for="VVS2">
+              <span>VVS2</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="VVS1">
+            <label for="VVS1">
+              <span>VVS1</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="IF">
+            <label for="IF">
+              <span>IF</span>
+            </label></li>
+          <li>
+            <input type="radio" name="clarity" id="FL">
+            <label for="FL">
+              <span>FL</span>
+            </label></li>
+        </ul>
+      </article>
+      <article class="filter-cut">
+        <h3>Cut</h3>
+        <div class="range-slider">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="compartments">
+          <li><input type="radio" checked name="cut" id="good"><label for="good">
+              <span>Good</span>
+            </label></li>
+          <li><input type="radio" name="cut" id="very-good"><label for="very-good">
+              <span>Very Good</span>
+            </label></li>
+          <li><input type="radio" name="cut" id="ideal"><label for="ideal">
+              <span>Ideal</span>
+            </label></li>
+          <li><input type="radio" name="cut" id="kod-ideal">
+            <label for="kod-ideal">
+              <span>KOD Ideal</span>
+            </label></li>
+        </ul>
+      </article>
+      <article class="filter-color-grade">
+        <h3>Color grade</h3>
+        <div class="range-slider">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="compartments">
+          <li>
+            <input type="radio" checked name="color-grade" id="J">
+            <label for="J">
+              <span>J</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="I">
+            <label for="I">
+              <span>I</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="H">
+            <label for="H">
+              <span>H</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="G">
+            <label for="G">
+              <span>G</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="F">
+            <label for="F">
+              <span>F</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="E">
+            <label for="E">
+              <span>E</span>
+            </label></li>
+          <li>
+            <input type="radio" name="color-grade" id="D">
+            <label for="D">
+              <span>D</span>
+            </label></li>
+        </ul>
+      </article>
+      <article class="filter-color">
+        <h3>Color</h3>
+        <div class="range-slider">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="compartments">
+          <li>
+            <input type="radio" checked name="color" id="white">
+            <label for="white">
+              <span>Whi</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="yellow">
+            <label for="yellow">
+              <span>Yel</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="green">
+            <label for="green">
+              <span>Gre</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="black">
+            <label for="black">
+              <span>Bla</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="blue">
+            <label for="blue">
+              <span>Blu</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="red">
+            <label for="red">
+              <span>Red</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="orange">
+            <label for="orange">
+              <span>Pur</span>
+            </label></li>
+          <li>
+              <input type="radio" name="color" id="purple">
+            <label for="purple">
+              <span>Ora</span>
+            </label></li>
+        </ul>
+      </article>
+    </section>
+  </aside>
+  <section class="results">
+    <header class="header-all-diamonds-results">
+      <form name="productform" class="productForm-layout" action="?" method="get">
+        <div>
+          <label for="sort-diamonds">
+            <span>Sort:</span>
+            <select name="sort-diamonds" id="sort-diamonds">
+              <option value="price (asc)">Price (asc)</option>
+              <option value="price (desc)">Price (desc)</option>
+              <option value="weight (asc)">Weight (asc)</option>
+              <option value="weight (desc)">Weight (desc)</option>
+              <option value="clarity (asc)">Clarity (asc)</option>
+              <option value="clarity (desc)">Clarity (desc)</option>
+              <option value="cut (asc)">Cut (asc)</option>
+              <option value="cut (desc)">Cut (desc)</option>
+              <option value="color-grade (asc)">Color-grade (asc)</option>
+              <option value="color-grade (desc)">Color-grade (desc)</option>
+            </select>
+          </label>
+          <label for="found-count-display">
+            <span>Found </span><span class="found-count">36:</span>
+            <select name="found-count-display" id="page-display">
+              <option value="25 (per page)">25 (per page)</option>
+              <option value="50 (per page)">50 (per page)</option>
+              <option value="100 (per page)">100 (per page)</option>
+            </select>
+          </label>
+          <ul class="filter-layout">
+            <li class="grid"><a href="#" class="active icon-action-white icon-action-white-ic_view_module_white_24dp"
+                rel="grid">List view</a></li>
+            <li class="list"><a href="#" class="active icon-action-white icon-action-white-ic_view_list_white_24dp"
+                rel="list">Table view</a></li>
+            <li class="table"><a href="#" class="active icon-action-white icon-action-white-ic_view_headline_white_24dp"
+                rel="table">Grid view</a></li>
+          </ul>
+        </div>
+      </form>
+
+      <!-- <div class="page-display">
+        <a href="#" class="active icon-action-white icon-action-white-ic_view_quilt_white_24dp"></a>
+        <a href="#" class="active icon-action-white icon-action-white-ic_view_module_white_24dp"></a>
+        <a href="#" class="active icon-action-white icon-action-white-ic_view_list_white_24dp"></a>
+      </div> -->
+    </header>
+    <section class="main-results">
+        <ul>
+            <li>
+              <a href="#">
+                <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+              </a>
+              <div class="description">
+                <p>
+                  <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                </p>
+                <p>
+                  <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                </p>
+                <a href="#">Details</a>
+                <a href="#">Buy now</a>
+                <h3>375$</h3>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+              </a>
+              <div class="description">
+                <p>
+                  <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                </p>
+                <p>
+                  <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                </p>
+                <a href="#">Details</a>
+                <a href="#">Buy now</a>
+                <h3>375$</h3>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+              </a>
+              <div class="description">
+                <p>
+                  <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                </p>
+                <p>
+                  <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                </p>
+                <a href="#">Details</a>
+                <a href="#">Buy now</a>
+                <h3>375$</h3>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+              </a>
+              <div class="description">
+                <p>
+                  <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                </p>
+                <p>
+                  <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                </p>
+                <a href="#">Details</a>
+                <a href="#">Buy now</a>
+                <h3>375$</h3>
+              </div>
+            </li>
+            <li>
+                <a href="#">
+                  <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                </a>
+                <div class="description">
+                  <p>
+                    <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                  </p>
+                  <p>
+                    <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                  </p>
+                  <a href="#">Details</a>
+                  <a href="#">Buy now</a>
+                  <h3>375$</h3>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                </a>
+                <div class="description">
+                  <p>
+                    <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                  </p>
+                  <p>
+                    <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                  </p>
+                  <a href="#">Details</a>
+                  <a href="#">Buy now</a>
+                  <h3>375$</h3>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                </a>
+                <div class="description">
+                  <p>
+                    <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                  </p>
+                  <p>
+                    <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                  </p>
+                  <a href="#">Details</a>
+                  <a href="#">Buy now</a>
+                  <h3>375$</h3>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                </a>
+                <div class="description">
+                  <p>
+                    <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                  </p>
+                  <p>
+                    <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                  </p>
+                  <a href="#">Details</a>
+                  <a href="#">Buy now</a>
+                  <h3>375$</h3>
+                </div>
+              </li>
+              <li>
+                  <a href="#">
+                    <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                  </a>
+                  <div class="description">
+                    <p>
+                      <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                    </p>
+                    <p>
+                      <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                    </p>
+                    <a href="#">Details</a>
+                    <a href="#">Buy now</a>
+                    <h3>375$</h3>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                  </a>
+                  <div class="description">
+                    <p>
+                      <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                    </p>
+                    <p>
+                      <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                    </p>
+                    <a href="#">Details</a>
+                    <a href="#">Buy now</a>
+                    <h3>375$</h3>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                  </a>
+                  <div class="description">
+                    <p>
+                      <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                    </p>
+                    <p>
+                      <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                    </p>
+                    <a href="#">Details</a>
+                    <a href="#">Buy now</a>
+                    <h3>375$</h3>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/diamonds/diamond-princess-032carat-si2.jpg" alt=""></figure>
+                  </a>
+                  <div class="description">
+                    <p>
+                      <span>0.32Car</span><span>|</span><span>Good</span><span>|</span><span>SI2</span>
+                    </p>
+                    <p>
+                      <span>Princess</span><span>|</span><span>White</span><span>|</span><span>J</span>
+                    </p>
+                    <a href="#">Details</a>
+                    <a href="#">Buy now</a>
+                    <h3>375$</h3>
+                  </div>
+                </li>
+          </ul>
+    </section>
+
+  </section>
+</main>
