@@ -1,4 +1,6 @@
 node_modules/
+_sass
+.sass-cache
 _data
 _drafts/
 _posts/
