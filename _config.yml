@@ -1,0 +1,14 @@
+url: "https://stambi4a.github.io" # the base hostname & protocol for your site
+baseurl: "/king-of-diamonds"                     # the subpath of your site, e.g. /blog/
+#...
+title: King of Diamonds
+keep_files: []
+exclude: [
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"] # Don't forget that Jekyll automatically
+                          # excludes files with a dot prefix
+sass:
+    sass_dir: _sass

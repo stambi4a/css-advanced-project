@@ -2,7 +2,7 @@ main.home-main{
   // margin-top: 1rem;
   padding: 0 1rem;
   section.week-offers {
-    background: url($base+"images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
+    background: url($base+"/assets/images/backgrounds/week-offers-bg.jpg") no-repeat 100% center;
     background-size: cover;
     height: 26rem;
   }
@@ -43,7 +43,7 @@ main.home-main{
   }
   
   section.jewelry-gifts {
-    background: url($base+"images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
+    background: url($base+"/assets/images/backgrounds/jewelry-gifts-bg.png") no-repeat center 100%;
     background-size: cover;
     height: 26rem;
   }
