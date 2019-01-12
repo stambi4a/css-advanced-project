@@ -1,0 +1,30 @@
+html {}
+
+a {
+  text-decoration: none;
+  color:$headCol;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+i.fa {
+  font-size: $fontLinks;
+  color: $headCol;
+}
+
+input,
+select,
+option {
+  @extend %formField;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headCol;
+}

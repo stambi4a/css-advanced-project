@@ -1,0 +1,144 @@
+$headCol:rgb(61, 0, 112);
+$bigCol:rgb(40, 40, 164);
+$linkCol:rgb(38, 0, 80);
+$butCol:rgb(38, 0, 80);
+$liBgCol:rgb(75, 143, 252);
+$liBgColOp:rgba(75, 143, 252,0.4);
+$liBgLiCol:rgb(165, 203, 252);
+$offersBgCol:rgb(250, 253, 255);
+$bigBorCol:rgb(226, 236, 255);
+$headBorCol:rgb(237, 219, 255);
+$linkBorCol:rgb(237, 219, 255);
+$menuBorCol:rgb(221, 197, 210);
+$menuBorColOp:rgba(221, 197, 210, 0.3);
+$boxCol:rgba(99, 1, 60, 0.1);
+$boxColLi:rgba(75, 143, 252, 0.4);
+$white:rgb(255, 255, 255);
+$weekCol:rgb(30, 1, 20);
+$quotCol:rgb(121, 0, 255);
+$spBorLight:rgb(236, 179, 255);
+$footCol:rgb(251, 244, 255);
+$specCol:rgba(240, 220, 240, 0.6);
+$liCol:rgb(178, 209, 255);
+$transCol:rgba(190, 54, 54, 0.1);
+$selCol:rgb(217, 180, 230);
+$headColOp:rgba(61, 0, 112, 0.7);
+$borLink:1px solid $linkBorCol;
+$borLight:1px solid $bigBorCol;
+$borDark:1px solid $headCol;
+$borBut:1px solid $butCol;
+$borButMain:1px solid $liBgCol;
+$menuBor:1px outset $menuBorCol;
+$menuBorLi:1px outset $menuBorColOp;
+$socBor:1px solid rgb(255,255,255);
+$headFont:"Oleo Script";
+$mainFont:"Montserrat";
+$iconFont:"FontAwesome";
+$fontAll:0.9rem;
+$fontLinks:1rem;
+$fontBig:1.6rem;
+$fontMiddle:1.6rem;
+$fontHead:1.2rem;
+$fontArt:2rem;
+$butBoxSh: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
+$softBoxSh:0.1rem 0.1rem 0.2rem 0.2rem $boxCol;
+$imBoxSh:0rem 0rem 0.2rem 0.15rem $boxCol;
+$linkBoxSh:-0.1rem 0.1rem 0rem 0rem $boxCol;
+$ind:number;
+$rgbRed:255;
+$rgbGreen:255;
+$rgbBlue:255;
+%smallHead {
+  text-align:center;
+  font-family:$mainFont;
+  font-size:0.8rem;
+}
+%formField {
+  border-radius: 0.2rem;
+  border: $borDark;
+  outline: none;
+  color: $headCol;
+  background:none;
+}
+%buttonStandard {
+  width:120px;
+  margin:0 auto;
+  padding:0.4rem 0.4rem;
+  border-radius:0.2rem;
+  border:$borButMain;
+  color:$liBgCol;
+  font-weight:650;
+  text-align:center;
+  &:hover {
+    color:white;
+    background:$liBgCol;
+  }
+}
+%buttonOnBg {
+  width:150px;
+  padding:0.4rem 0.4rem;
+  border-radius:0.2rem;
+  border:$borButMain;
+  border-color:white;
+  color:white;
+  font-weight:650;
+  text-align:center;
+  &:hover {
+    color:white;
+    background:$transCol;
+  }
+}
+%buttonShopSm {
+  border-radius:0.1rem;
+  border:$borDark;
+  color:$headCol;
+  font-weight:650;
+  text-align:center;
+  &:hover {
+    color:white;
+    background:$headCol;
+  }
+}
+%linkHover {
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
+}
+
+@media only screen and (max-width:768px) {
+  %linkHover768 {
+    border-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(48, 2, 29, 0.3);
+  }
+  %inputCaret {
+    // display:inline-block;
+    position:relative;
+    right:-21px;
+    top:0px;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity:0;
+    &+span:after {
+      display:inline-block;
+      position:relative; 
+      top:0px;
+      right:5px;
+      z-index: 1;
+      font-size:1.4rem;
+      font-family:$iconFont;
+      color:$headCol;
+      content:"\f0d7";
+    }
+    &:checked+span:after {
+      transform:rotate(-90deg);
+    }
+    &:checked~ul {
+      display:flex;
+      flex-direction:column;
+      align-items: flex-start;
+      justify-content: center;
+      z-index:1;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+//---Section variables and functions
+
+%defSet {
+  margin:0;
+  padding: 0;
+}
+//---End of Section variables and functions
+
+html {
+	font:14px/1.5 "Montserrat", serif;
+}
+
+body {
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: "Oleo Script", serif;
+@extend %defSet;
+
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.0rem; }
+h6 { font-size: 0.8rem; }
+
+p {
+  @extend %defSet;
+}
+
+ol, ul, dl {
+margin: 0;
+}
+
+ul, ol {
+  @extend %defSet;
+}
+
+ul li, ol li {
+list-style-position: inside;
+}
+
+ul ul {
+  @extend %defSet;
+}
+
+ul li { list-style-type: none; @extend %defSet;}
+ul ul li { list-style-type: none; @extend %defSet;}
+ul ul ul li { list-style-type: none; @extend %defSet;}
+
+blockquote {
+border-left: 4px solid #DDD;
+font-style: italic;
+margin: 0 0 1.5rem 2rem;
+padding: 1rem 2rem;
+position: relative;
+}
+
+blockquote .author {
+text-align: right;
+}
+
+table {
+width: 100%;
+table-layout: fixed;
+margin-bottom: 1.5rem;
+border: 1px solid #CCC;
+border-spacing: 0;
+border-collapse: collapse;
+}
+
+table td, table th {
+border: 1px solid #CCC;
+padding: 0.3rem 0.5rem;
+}
+
+table thead th {
+text-align: left;
+background: #CCC;
+}
+
+table tr:nth-child(odd) td {
+background: #F1F1F1;
+}
+
+table tr:hover td {
+background: black;
+color: #FFF;
+border-color: transparent;
+}
+
+hr {
+margin: 1rem 0;
+}
+
+figure {
+  margin:0;
+  padding:0;
+}
